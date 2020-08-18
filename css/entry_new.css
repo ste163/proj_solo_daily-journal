@@ -1,1 +1,74 @@
 @import "main.css";
+
+/* CSS Custom Properties (variables) defined at root */
+:root {
+    --colorDeselected: #eee;
+    --colorSelected: rgb(236, 243, 236);
+}
+
+header {
+    align-items: center;
+    background-color: cyan;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+    padding: 0 10px 0 10px;
+}
+
+.add {
+    align-items: center;
+    background-color: lime;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer {
+    background-color: violet;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+fieldset {
+    border: none 0;
+}
+
+.add__date, .add__mood, .add__concept, .add__title, .add__text {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.add__date--input {
+    border-style: hidden;
+    background-color: var(--colorDeselected);
+}
+
+.add__date--input:focus, .add__mood--dropdown:focus, .add__concept--text:focus, .add__title--text:focus, .add__text--text:focus {
+    outline: none;
+    background-color: var(--colorSelected);
+}
+
+.add__mood--dropdown {
+    border-style: hidden;
+    background-color: var(--colorDeselected);
+}
+
+.add__concept--text {
+    border-style: none;
+    border-bottom-style: solid;
+    background-color: var(--colorDeselected);
+}
+
+
+.add__title--text {
+    border-style: none;
+    border-bottom-style: solid;
+    background-color: var(--colorDeselected);
+}
+
+.add__text--text {
+    border-style: none;
+    border-bottom-style: solid;
+    background-color: var(--colorDeselected);
+}
