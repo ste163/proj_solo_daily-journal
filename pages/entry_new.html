@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Spiral</title>
+    <link rel="stylesheet" href="../css/entry_new.css">
 </head>
 <body>
     <header>
@@ -14,11 +15,11 @@
         <form class="add" action="">
             <fieldset class="add__date">
                 <label for="s-date">Date Written</label>
-                <input type="date" id="s-date" name="s-date">
+                <input class="add__date--input" type="date" id="s-date" name="s-date">
             </fieldset>
             <fieldset class="add__mood">
                 <label for="s-mood">How're you feeling?</label>
-                <select id="s-mood" name="s-mood">
+                <select class="add__mood--dropdown" id="s-mood" name="s-mood">
                     <option value="mood1">mood1</option>
                     <option value="mood2">mood2</option>
                     <option value="mood3">mood3</option>
@@ -26,15 +27,15 @@
             </fieldset>
             <fieldset class="add__concept">
                 <label for="s-concept" id="s-concept" name="s-concept">Concepts Covered</label>
-                <textarea name="s-concept"></textarea>
+                <textarea class="add__concept--text" name="s-concept"></textarea>
             </fieldset>
             <fieldset class="add__title">
                 <label for="s-title" id="s-title" name="s-title">Title</label>
-                <textarea name="s-title"></textarea>
+                <textarea class="add__title--text" name="s-title"></textarea>
             </fieldset>
             <fieldset class="add__text">
                 <label for="s-text" id="s-text" name="s-text">Text</label>
-                <textarea name="s-text"></textarea>
+                <textarea class="add__text--text"name="s-text"></textarea>
             </fieldset>
             <fieldset class="add__save">
                 <input type="submit" value="Save Spiral">
