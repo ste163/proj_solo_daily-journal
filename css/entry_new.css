@@ -6,24 +6,35 @@
     --colorSelected: rgb(236, 243, 236);
 }
 
-header {
-    align-items: center;
-    background-color: cyan;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 0 50px 0 50px;
-    padding: 0 10px 0 10px;
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer"
 }
 
-.add {
-    align-items: center;
+header {
+    display: grid;
+    /* I didn't label these yet, but they are being divided */
+    grid-template-areas: "back logo h1-text";
+    background-color: cyan;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: "form";
+}
+
+fieldset {
+    display: grid;
+    grid-template-areas: "form form form";
     background-color: lime;
-    display: flex;
-    flex-flow: column nowrap;
 }
 
 footer {
+
     background-color: violet;
     display: flex;
     flex-flow: row nowrap;
@@ -33,11 +44,11 @@ footer {
 fieldset {
     border: none 0;
 }
-
+/* 
 .add__date, .add__mood, .add__concept, .add__title, .add__text {
     display: flex;
     flex-flow: column nowrap;
-}
+} */
 
 .add__date--input {
     border-style: hidden;

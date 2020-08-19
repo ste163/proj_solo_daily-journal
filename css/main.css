@@ -41,7 +41,6 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: auto;
     grid-template-areas:
         "header header"
         "entry entry"
