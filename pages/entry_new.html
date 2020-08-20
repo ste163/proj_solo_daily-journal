@@ -7,41 +7,38 @@
     <link rel="stylesheet" href="../css/entry_new.css">
 </head>
 <body>
-    <header>
-        <button><a href="../index.html">Back</a></button>
-        <h1>New Spiral</h1>
+    <header class="nav">
+        <button class="nav__button"><a href="../index.html">Back</a></button>
+        <p class="nav__logo">LOGO</p>
+        <h1 class="nav__heading">New Spiral</h1>
     </header>
     <main>
-        <form class="add" action="">
-            <fieldset class="add__date">
-                <label for="s-date">Date Written</label>
-                <input class="add__date--input" type="date" id="s-date" name="s-date">
-            </fieldset>
-            <fieldset class="add__mood">
-                <label for="s-mood">How're you feeling?</label>
-                <select class="add__mood--dropdown" id="s-mood" name="s-mood">
+        <form class="new" action="">
+            <div class="two-col">
+                <label class="new__label" for="s-date">Date Written</label>
+                <input class="new__date--input" type="date" id="s-date" name="s-date">
+
+                <label class="new__label" for="s-mood">How's your Mood?</label>
+                <select class="new__mood--dropdown" id="s-mood" name="s-mood">
                     <option value="mood1">mood1</option>
                     <option value="mood2">mood2</option>
                     <option value="mood3">mood3</option>
                 </select>
-            </fieldset>
-            <fieldset class="add__concept">
-                <label for="s-concept" id="s-concept" name="s-concept">Concepts Covered</label>
-                <textarea class="add__concept--text" name="s-concept"></textarea>
-            </fieldset>
-            <fieldset class="add__title">
-                <label for="s-title" id="s-title" name="s-title">Title</label>
-                <textarea class="add__title--text" name="s-title"></textarea>
-            </fieldset>
-            <fieldset class="add__text">
-                <label for="s-text" id="s-text" name="s-text">Text</label>
-                <textarea class="add__text--text"name="s-text"></textarea>
-            </fieldset>
-            <fieldset class="add__save">
+            </div>
+
+                <label class="new__label" for="s-concept" id="s-concept" name="s-concept">Concepts Covered</label>
+                <textarea class="new__concept--text" name="s-concept" rows="1"></textarea>
+
+
+                <label class="new__label" for="s-title" id="s-title" name="s-title">Title</label>
+                <textarea class="new__title--text" name="s-title" rows="1"></textarea>
+
+                <label class="new__label" for="s-text" id="s-text" name="s-text">Text</label>
+                <textarea class="new__text--text"name="s-text" rows="8"></textarea>
+
                 <input type="submit" value="Save Spiral">
-            </fieldset>
         </form>
     </main>
-    <footer>S.T. Edwards <a href="https://github.com/ste163">Github Profile</a> &copy 2020</footer>
+    <footer>S.T. Edwards <a href="https://github.com/ste163">Github</a> &copy 2020</footer>
 </body>
 </html>

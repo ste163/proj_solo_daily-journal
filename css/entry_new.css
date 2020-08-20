@@ -6,62 +6,83 @@
     --colorSelected: rgb(236, 243, 236);
 }
 
-header {
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Suggested from stackoverflow to keep
+consistent linespacing in text boxes */
+textarea { 
+    height: auto; 
+    overflow: scroll;
+    resize: none;
+}
+
+.nav {
     align-items: center;
     background-color: cyan;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 0 50px 0 50px;
-    padding: 0 10px 0 10px;
 }
 
-.add {
-    align-items: center;
+.nav__button {
+    flex: 1;
+}
+
+.nav__logo {
+    flex: 1;
+}
+
+.nav__heading {
+    flex: 2;
+    align-self: end;
+}
+
+/* For desktop, activate flex-flow row
+Mobile needs column */
+.two-col {
+    display: flex;
+    flex-flow: column nowrap;
+    /* flex-flow: row nowrap; */
+}
+
+.new {
     background-color: lime;
     display: flex;
     flex-flow: column nowrap;
-}
-
-footer {
-    background-color: violet;
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
+    align-content: center;
 }
 
-fieldset {
-    border: none 0;
+.new__label {
+    letter-spacing: 0.3em;
+    font-weight: bolder;
+    align-self: center;
 }
 
-.add__date, .add__mood, .add__concept, .add__title, .add__text {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.add__date--input {
+.new__date--input {
     border-style: hidden;
     background-color: var(--colorDeselected);
 }
 
-.add__date--input:focus, .add__mood--dropdown:focus, .add__concept--text:focus, .add__title--text:focus, .add__text--text:focus {
+.new__date--input:focus, .new__mood--dropdown:focus, .new__concept--text:focus, .new__title--text:focus, .add__text--text:focus {
     outline: none;
     background-color: var(--colorSelected);
 }
 
-.add__mood--dropdown {
+.new__mood--dropdown {
     border-style: hidden;
     background-color: var(--colorDeselected);
 }
 
-.add__concept--text {
+.new__concept--text {
     border-style: none;
     border-bottom-style: solid;
     background-color: var(--colorDeselected);
 }
 
-
-.add__title--text {
+.new__title--text {
     border-style: none;
     border-bottom-style: solid;
     background-color: var(--colorDeselected);
@@ -71,4 +92,11 @@ fieldset {
     border-style: none;
     border-bottom-style: solid;
     background-color: var(--colorDeselected);
+}
+
+footer {
+    background-color: violet;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
