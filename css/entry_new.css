@@ -19,6 +19,18 @@ textarea {
     resize: none;
 }
 
+fieldset {
+    display: flex;
+    flex-flow: row;
+    justify-content: stretch;
+}
+
+.layout__center {
+    display: flex;
+    flex-flow: column;
+    align-content: stretch
+}
+
 .nav {
     align-items: center;
     background-color: cyan;
@@ -41,10 +53,10 @@ textarea {
 
 /* For desktop, activate flex-flow row
 Mobile needs column */
-.two-col {
+.layout__two-col {
     display: flex;
-    flex-flow: column nowrap;
-    /* flex-flow: row nowrap; */
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 .new {
@@ -61,7 +73,14 @@ Mobile needs column */
     align-self: center;
 }
 
+.new__label--small {
+    font-size: 0.8em;
+}
+
 .new__date--input {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     border-style: hidden;
     background-color: var(--colorDeselected);
 }
@@ -72,6 +91,9 @@ Mobile needs column */
 }
 
 .new__mood--dropdown {
+    display: flex;
+    align-content: stretch;
+    align-self: center;
     border-style: hidden;
     background-color: var(--colorDeselected);
 }

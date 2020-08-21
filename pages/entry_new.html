@@ -14,28 +14,42 @@
     </header>
     <main>
         <form class="new" action="">
-            <div class="two-col">
-                <label class="new__label" for="s-date">Date Written</label>
-                <input class="new__date--input" type="date" id="s-date" name="s-date">
+            <div class="layout__two-col">
+                <fieldset>
 
-                <label class="new__label" for="s-mood">How's your Mood?</label>
-                <select class="new__mood--dropdown" id="s-mood" name="s-mood">
-                    <option value="mood1">mood1</option>
-                    <option value="mood2">mood2</option>
-                    <option value="mood3">mood3</option>
-                </select>
+                    <label class="new__label new__label--small" for="s-date">Date Written</label>
+                    <input class="new__date--input" type="date" id="s-date" name="s-date">
+
+                </fieldset>
+                <fieldset>
+                    <div class="layout__center">
+                        <label class="new__label new__label--small" for="s-mood">How's your Mood?</label>
+                        <select class="new__mood--dropdown" id="s-mood" name="s-mood">
+                            <option value="mood1">mood1</option>
+                            <option value="mood2">mood2</option>
+                            <option value="mood3">mood3</option>
+                        </select>
+                    </div>
+                </fieldset>
             </div>
-
-                <label class="new__label" for="s-concept" id="s-concept" name="s-concept">Concepts Covered</label>
-                <textarea class="new__concept--text" name="s-concept" rows="1"></textarea>
-
-
-                <label class="new__label" for="s-title" id="s-title" name="s-title">Title</label>
-                <textarea class="new__title--text" name="s-title" rows="1"></textarea>
-
-                <label class="new__label" for="s-text" id="s-text" name="s-text">Text</label>
-                <textarea class="new__text--text"name="s-text" rows="8"></textarea>
-
+            <fieldset>
+                <div class="layout__center">
+                    <label class="new__label" for="s-concept" id="s-concept" name="s-concept">Concepts Covered</label>
+                    <textarea class="new__concept--text" name="s-concept" rows="1"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="layout__center">
+                    <label class="new__label" for="s-title" id="s-title" name="s-title">Title</label>
+                    <textarea class="new__title--text" name="s-title" rows="1"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="layout__center">
+                    <label class="new__label" for="s-text" id="s-text" name="s-text">Text</label>
+                    <textarea class="new__text--text"name="s-text" rows="8"></textarea>
+                </div>
+            </fieldset>
                 <input type="submit" value="Save Spiral">
         </form>
     </main>
