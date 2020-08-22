@@ -11,6 +11,7 @@ const journal = [
     {
         id: 1,
         dateWritten: "07/24/2025",
+        author: "Sam",
         mood: "Ok",
         concept: "HTML & CSS",
         title: "First Title",
@@ -19,6 +20,7 @@ const journal = [
     {
         id: 2,
         dateWritten: "07/24/2026",
+        author: "Sam",
         mood: "Great",
         concept: "CSS",
         title: "Second Title",
@@ -27,6 +29,7 @@ const journal = [
     {
         id: 3,
         dateWritten: "07/24/2027",
+        author: "Sam",
         mood: "Terrible",
         concept: "JavaScript",
         title: "Third Title",
