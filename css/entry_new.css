@@ -15,7 +15,7 @@ body {
 consistent linespacing in text boxes */
 textarea { 
     height: auto; 
-    overflow: scroll;
+    overflow: vertical;
     resize: none;
 }
 

@@ -8,29 +8,33 @@
 </head>
 
 <body>
-    <header>
-        <h1>Spiral</h1>
-        <h2 class="subtitle">Daily Journal</h2>
+    <header class="top-header">
+        <p class="top-header__logo">LOGO</p>
+        <h1 class="top-header__title">Spiral</h1>
+        <p class="top-header_subtitle">Daily Journal</p>
     </header>
     <main>
-        <article class="entry">
-            <header>
-                <h3 class="entry__title">Last Entry Title</h3>
-                <p class="entry__date">Last Entry Date</p>
-                <p class="entry__author">Last Entry Author</p>
+        <!-- Each entry in main is a grid item -->
+        <article class="latest-entry">
+            <!-- Header will need to be it's own grid -->
+            <header class="latest-entry__header"> 
+                <h3 class="latest-entry__title">Last Entry Title</h3>
+                <p class="latest-entry__date">Last Entry Date</p>
+                <p class="latest-entry__author">Last Entry Author</p>
             </header>
-            <section class="entry__text">
+            <section class="latest-entry__text">
                 <p>Last Entry Content few lines</p>
             </section>
-            <button class="entry__read-more">Last Entry Read More</button>
+            <button class="latest-entry__read-more">Last Entry Read More</button>
         </article>
         <aside class="total">
             <p class="total__amount">#</p>
             <p class="total__text">Total Spirals</p>
         </aside>
-        <button class="button__all"><a href="pages/entry_all.html">View All Spirals</a></button>
+        <button class="button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
         <button class="button__new"><a href="pages/entry_new.html">Enter New Spiral</a></button>
     </main>
+    <!-- To get correct footer placement, may need to create a grid container -->
     <footer>S.T. Edwards <a href="https://github.com/ste163">Github Profile</a> &copy 2020</footer>
 </body>
 </html>

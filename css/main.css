@@ -1,30 +1,24 @@
 body {
   font-family: sans-serif;
+  display: grid;
+  background-color: rgb(150, 240, 150);
+  outline: tomato solid;
 }
 
-header {
-    grid-area: header;
+.top-header {
+    outline: blue solid;
+    background-color: rgb(128, 88, 128);
+    display: grid;
 }
 
-.entry {
-    grid-area: entry;
+.top-header__subtitle {
+  font-size: 1.2em;
 }
 
-.total {
-    grid-area: total;
-}
-
-.button__all {
-    grid-area: b-all;
-}
-
-.button__new {
-    grid-area: b-new;
-}
-
+/* 
 footer {
-    grid-area: footer;
-}
+    
+} */
 
 /** NORMALIZE CSS BEINGS AFTER THIS. DO NOT MESS WITH (UNLESS DELETING A SECTION). PUT ALL NEW CSS ABOVE THIS LINE.
  * 1. Correct the line height in all browsers.
@@ -44,14 +38,6 @@ html {
  */
 
 body {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header"
-        "entry entry"
-        "total b-all"
-        "b-new b-new"
-        "footer footer";
     margin: 0;
 }
 
@@ -101,15 +87,6 @@ abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
     text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-    font-weight: bolder;
 }
 
 /**
@@ -256,14 +233,6 @@ legend {
 
 progress {
   vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
 }
 
 /**
