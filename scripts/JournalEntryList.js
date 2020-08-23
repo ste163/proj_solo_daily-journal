@@ -20,9 +20,8 @@ export const EntryListComponent = () => {
         //in JournalEntryComponent, then for each index value, add
         //that to the HTML string
         HTMLrepresentation += JournalEntryComponent(entry);
-
-        entryLog.innerHTML += `
-            ${HTMLrepresentation}
-        `
     }
+        entryLog.innerHTML += `
+        ${HTMLrepresentation}
+    `
 }
