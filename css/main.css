@@ -1,3 +1,11 @@
+:root { 
+  --spiralBlue: #0F83AE;
+  --spiralPink: #F618C7;
+
+  --backgroundYellow: #FEFE83;
+  --bodyText: #2D2D2D;
+}
+
 @font-face {
   /* Custom fonts are for PERSONAL use only. This is a demostration project */
   font-family: "Amity Jack";
@@ -13,8 +21,8 @@
 
 body {
   font-family: sans-serif;
-  /* background-color: rgb(150, 240, 150);
-  outline: tomato solid; */
+  color: var(--bodyText);
+  background-color: var(--backgroundYellow);
 }
 
 .gridBody {
@@ -25,13 +33,13 @@ body {
     /* outline: blue solid;
     background-color: rgb(128, 88, 128); */
     display: grid;
-    grid-template-columns: 50px 3fr;
+    grid-template-columns: 10px 50px 20px 3fr;
     grid-template-rows: 1fr 10px 1fr;
 }
 
 .top-header__logo {
   grid-row: 1 / span 3;
-  grid-column-start: 1;
+  grid-column-start: 2;
   width: 50px;
   height: 100px;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzIuMyAxMzIuMyIgaGVpZ2h0PSI1MDAiIHdpZHRoPSI1MDAiIHZlcnNpb249IjEiPjxwYXRoIGQ9Im0zNi43IDc0LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzU3YThjNiIvPjxwYXRoIGQ9Im00My44IDY4LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzNmOWNiZSIvPjxwYXRoIGQ9Im01MC44IDY0LjFhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6IzBmODNhZSIvPjxwYXRoIGQ9Im03MS4zIDY2LjhhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y5NWRkOCIvPjxwYXRoIGQ9Im03OC4zIDYwLjdhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y4NDZkMiIvPjxwYXRoIGQ9Im04NS40IDUzLjFhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6I2Y2MThjNyIvPjwvc3ZnPg==) no-repeat center center;
@@ -39,20 +47,31 @@ body {
 }
 
 .top-header__title {
+  grid-column-start: 3;
   margin: 0;
+  color: var(--spiralBlue);
   /* align-self is a grid property
   to place items in cells */
   align-self: end;
-  grid-column-start: 2;
   font-family: "Amity Jack", Arial;
+  font-size: 3em;
+  letter-spacing: 0.3em;
 }
 
 .top-header__subtitle {
-  font-size: 1.2em;
   grid-row-start: 2;
-  grid-column-start: 2;
+  grid-column-start: 4;
   font-family: "SketchenAllcapsRegular";
-  font-size: 2em;
+  font-size: 2.3em;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  color: var(--spiralPink);
+}
+
+
+
+.latest-entry__title {
+  /* box-shadow: 5px 10px black; */
 }
 
 /* 
