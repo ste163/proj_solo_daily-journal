@@ -20,28 +20,31 @@
         <h1 class="top-header__title">Spiral</h1>
         <div class="top-header__subtitle">Daily Journal</div>
     </header>
-    <main>
+    <main class="gridMain">
         <!-- Each entry in main is a grid item -->
-        <article class="latest-entry">
-            <!-- Header will need to be it's own grid -->
-            <header class="latest-entry__header"> 
-                <!-- To get the correct box shadow on the title, will need to wrap
-                it in its own div -->
-                <h3 class="latest-entry__title">Last Entry Title</h3>
-                <p class="latest-entry__date">Last Entry Date</p>
-                <p class="latest-entry__author">Last Entry Author</p>
-            </header>
-            <section class="latest-entry__text">
-                <p>Last Entry Content few lines</p>
-            </section>
-            <button class="latest-entry__read-more">Last Entry Read More</button>
-        </article>
-        <aside class="total">
+        <div class="gridLatest">
+            <h2 class="boxTitle">Latest Spiral</h2>
+            <article class="latest-entry">
+                <!-- Header will need to be it's own grid -->
+                <header class="latest-entry__header"> 
+                    <!-- To get the correct box shadow on the title, will need to wrap
+                    it in its own div -->
+                    <h3 class="latest-entry__title">Last Entry Title</h3>
+                    <p class="latest-entry__date">Last Entry Date</p>
+                    <p class="latest-entry__author">Last Entry Author</p>
+                </header>
+                <section class="latest-entry__text">
+                    <p>Last Entry Content few lines</p>
+                </section>
+                <button class="latest-entry__read-more">Last Entry Read More</button>
+            </article>
+        </div>
+        <aside class="total-entry">
             <p class="total__amount">#</p>
             <p class="total__text">Total Spirals</p>
         </aside>
-        <button class="button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
-        <button class="button__new"><a href="pages/entry_new.html">Enter New Spiral</a></button>
+        <button class="button button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
+        <button class="button button__new"><a href="pages/entry_new.html">Enter New Spiral</a></button>
     </main>
     <!-- To get correct footer placement, may need to create a grid container -->
     <footer>S.T. Edwards <a href="https://github.com/ste163">Github Profile</a> &copy 2020</footer>

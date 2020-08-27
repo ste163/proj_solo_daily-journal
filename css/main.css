@@ -3,7 +3,10 @@
   --spiralPink: #F618C7;
 
   --backgroundYellow: #FEFE83;
+  --boxYellow: #E9EB68;
+  --boxShadowBlue: #57A8C6;
   --bodyText: #2D2D2D;
+
 }
 
 @font-face {
@@ -19,72 +22,12 @@
   font-style: normal;
 }
 
-body {
-  font-family: sans-serif;
-  color: var(--bodyText);
-  background-color: var(--backgroundYellow);
-}
-
-.gridBody {
-  display: grid;
-}
-
-.top-header {
-    /* outline: blue solid;
-    background-color: rgb(128, 88, 128); */
-    display: grid;
-    grid-template-columns: 10px 50px 20px 3fr;
-    grid-template-rows: 1fr 10px 1fr;
-}
-
-.top-header__logo {
-  grid-row: 1 / span 3;
-  grid-column-start: 2;
-  width: 50px;
-  height: 100px;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzIuMyAxMzIuMyIgaGVpZ2h0PSI1MDAiIHdpZHRoPSI1MDAiIHZlcnNpb249IjEiPjxwYXRoIGQ9Im0zNi43IDc0LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzU3YThjNiIvPjxwYXRoIGQ9Im00My44IDY4LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzNmOWNiZSIvPjxwYXRoIGQ9Im01MC44IDY0LjFhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6IzBmODNhZSIvPjxwYXRoIGQ9Im03MS4zIDY2LjhhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y5NWRkOCIvPjxwYXRoIGQ9Im03OC4zIDYwLjdhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y4NDZkMiIvPjxwYXRoIGQ9Im04NS40IDUzLjFhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6I2Y2MThjNyIvPjwvc3ZnPg==) no-repeat center center;
-  background-size: 50px 100px;
-}
-
-.top-header__title {
-  grid-column-start: 3;
-  margin: 0;
-  color: var(--spiralBlue);
-  /* align-self is a grid property
-  to place items in cells */
-  align-self: end;
-  font-family: "Amity Jack", Arial;
-  font-size: 3em;
-  letter-spacing: 0.3em;
-}
-
-.top-header__subtitle {
-  grid-row-start: 2;
-  grid-column-start: 4;
-  font-family: "SketchenAllcapsRegular";
-  font-size: 2.3em;
-  letter-spacing: 0.05em;
-  font-weight: 900;
-  color: var(--spiralPink);
-}
-
-
-
-.latest-entry__title {
-  /* box-shadow: 5px 10px black; */
-}
-
-/* 
-footer {
-    
-} */
-
 /** NORMALIZE CSS BEINGS AFTER THIS. DO NOT MESS WITH (UNLESS DELETING A SECTION). PUT ALL NEW CSS ABOVE THIS LINE.
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -97,7 +40,7 @@ html {
  */
 
 body {
-    margin: 0;
+    margin: 8px;
 }
 
 /**
@@ -340,4 +283,142 @@ progress {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+h2 {
+  margin: 0;
+}
+/* NORMALIZE ENDS */
+
+body {
+  font-family: sans-serif;
+  color: var(--bodyText);
+  background-color: var(--backgroundYellow);
+}
+
+/* WHOLE BODY GRID */
+.gridBody {
+  display: grid;
+}
+
+.top-header {
+    /* outline: blue solid;
+    background-color: rgb(128, 88, 128); */
+    display: grid;
+    grid-template-columns: 10px 50px 20px 3fr;
+    grid-template-rows: 1fr 10px 1fr;
+}
+
+.top-header__logo {
+  grid-row: 1 / span 3;
+  grid-column-start: 2;
+  width: 75px;
+  height: 100px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzIuMyAxMzIuMyIgaGVpZ2h0PSI1MDAiIHdpZHRoPSI1MDAiIHZlcnNpb249IjEiPjxwYXRoIGQ9Im0zNi43IDc0LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzU3YThjNiIvPjxwYXRoIGQ9Im00My44IDY4LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzNmOWNiZSIvPjxwYXRoIGQ9Im01MC44IDY0LjFhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6IzBmODNhZSIvPjxwYXRoIGQ9Im03MS4zIDY2LjhhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y5NWRkOCIvPjxwYXRoIGQ9Im03OC4zIDYwLjdhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y4NDZkMiIvPjxwYXRoIGQ9Im04NS40IDUzLjFhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6I2Y2MThjNyIvPjwvc3ZnPg==) no-repeat center center;
+  background-size: 75px 100px;
+}
+
+.top-header__title {
+  grid-column-start: 4;
+  margin: 0;
+  color: var(--spiralBlue);
+  /* align-self is a grid property
+  to place items in cells */
+  justify-self: end;
+  font-family: "Amity Jack", Arial;
+  font-size: 3em;
+  letter-spacing: 0.3em;
+}
+
+.top-header__subtitle {
+  grid-row-start: 2;
+  grid-column-start: 4;
+  font-family: "SketchenAllcapsRegular";
+  font-size: 2.6em;
+  letter-spacing: 0.05em;
+  font-weight: bolder;
+  color: var(--spiralPink);
+  align-self: center;
+  justify-self: end;
+}
+
+/* BODY GRID */
+.gridMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* BODY GRID ITEMS */
+
+.gridLatest {
+  display: grid;
+  grid-template-rows: 20px 50px 1fr;
+  grid-template-columns: 1;
+
+  /* The below sets where the item is
+  on the main grid */
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
+
+.latest-entry {
+  justify-self: center;
+  background-color: var(--boxYellow);
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column: 1;
+  z-index: 1;
+}
+
+
+.total-entry {
+
+
+}
+
+/* Style box headings */
+.boxTitle {
+  background-color: var(--spiralBlue);
+  box-shadow: -5px -5px var(--boxShadowBlue);
+  color: white;
+  padding-left: 5px;
+  width: 50%;
+  align-self: end;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+}
+
+
+/* MAKE A TAGS HAVE SPECIAL BUTTON CLASS */
+a {
+  color: white;
+  text-decoration: none
+}
+
+.button {
+  background-color: var(--spiralBlue);
+  height: 30%;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 5px 5px var(--spiralPink);
+}
+
+.button__view-all {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.button__new {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+/* FOOTER */
+.footer {
+  align-self: center;
 }
