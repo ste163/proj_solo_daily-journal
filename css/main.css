@@ -2,7 +2,7 @@
   --spiralBlue: #0F83AE;
   --spiralPink: #F618C7;
 
-  --backgroundYellow: #FEFE83;
+  --backgroundYellow: #FBFD54;
   --boxYellow: #E9EB68;
   --boxShadowBlue: #57A8C6;
   --bodyText: #2D2D2D;
@@ -35,7 +35,7 @@
  */
 
 body {
-    margin: 8px;
+    margin: 0px;
 }
 
 /**
@@ -242,13 +242,73 @@ progress {
 h2 {
   margin: 0;
 }
-/* NORMALIZE ENDS */
+
+/*
+*
+*
+*
+
+********************* NORMALIZE ENDS **********************
+
+*
+*
+*/
 
 body {
   font-family: sans-serif;
   color: var(--bodyText);
-  background-color: var(--backgroundYellow);
 }
+
+/****
+***
+***
+ NAVIGATION BAR 
+ ***
+ ***
+ *****/
+
+.top-header__nav {
+  display: inline-block;
+  color: white;
+}
+
+
+/* CREATE TOGGLE */
+.nav__hamburger ~ input:checked ~ .nav__items {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+}
+
+.nav__items {
+  display: none;
+}
+/* END CREATE TOGGLE */
+
+.nav__hamburger {
+  font-size: 2em;
+  color: var(--spiralBlue);
+  font-weight: bolder;
+}
+
+.nav__checkbox {
+  display: none;
+}
+
+.nav__item {
+  font-size: 1.2em;
+  font-weight: 100;
+  margin: 10px;
+}
+
+
+/****
+***
+***
+ END NAVIGATION BAR 
+ ***
+ ***
+ *****/
 
 /* WHOLE BODY GRID */
 .gridBody {
@@ -256,11 +316,12 @@ body {
 }
 
 .top-header {
-    /* outline: blue solid;
-    background-color: rgb(128, 88, 128); */
     display: grid;
+    position: sticky;
     grid-template-columns: auto auto 20px 3fr;
     grid-template-rows: auto 10px 1fr;
+    padding: 7px;
+    background-color: var(--backgroundYellow);
 }
 
 .top-header__logo {
@@ -307,25 +368,33 @@ body {
 /* BODY GRID ITEMS */
 
 .gridLatest {
-  display: grid;
-  grid-template-rows: 20px 50px 1fr;
-  grid-template-columns: 1;
 
   /* The below sets where the item is
   on the main grid */
-  grid-row: 1;
+  grid-row: auto;
   grid-column: 1 / 3;
 }
 
 .latest-entry {
+  margin: 0;
   justify-self: center;
-  background-color: var(--boxYellow);
   grid-row-start: 1;
   grid-row-end: 4;
   grid-column: 1;
   z-index: 1;
 }
 
+.latest-entry__title {
+  margin: 0;
+}
+
+.latest-entry__date {
+  margin: 0;
+}
+
+.latest-entry__author {
+  margin: 0;
+}
 
 .total-entry {
 
@@ -338,7 +407,7 @@ body {
   box-shadow: -5px -5px var(--boxShadowBlue);
   color: white;
   padding-left: 5px;
-  width: 50%;
+  width: 25vmax;
   align-self: end;
   grid-row: 1;
   grid-column: 1;
@@ -348,7 +417,7 @@ body {
 
 /* MAKE A TAGS HAVE SPECIAL BUTTON CLASS */
 a {
-  color: white;
+  color: var(--bodyText);
   text-decoration: none
 }
 

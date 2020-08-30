@@ -10,12 +10,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-
-
 </head>
 
 <body class="gridBody">
     <header class="top-header">
+        <nav class="top-header__nav">
+            <label class="nav__hamburger" for="nav">&#9776</label>
+            <input class="nav__checkbox" type="checkbox" id="nav">
+            <div class="nav__items">
+                <a class="nav__item" href="index.html">Home</a>
+                <a class="nav__item" href="pages/entry_all.html">View All</a>
+                <a class="nav__item" href="pages/entry_new.html">Create New</a>
+            </div>
+        </nav>
         <div class="top-header__logo"></div>
         <h1 class="top-header__title">Spiral</h1>
         <div class="top-header__subtitle">Daily Journal</div>
@@ -34,9 +41,9 @@
                     <p class="latest-entry__author">Last Entry Author</p>
                 </header>
                 <section class="latest-entry__text">
-                    <p>Last Entry Content few lines</p>
+                    <p>Last Entry Content few lines. Lorem ipsom jipson Lorem ipsom jipson Lorem ipsom jipson </p>
                 </section>
-                <button class="latest-entry__read-more">Last Entry Read More</button>
+                <button class="latest-entry__read-more">Read Full Entry</button>
             </article>
         </div>
         <aside class="total-entry">
