@@ -17,11 +17,11 @@
         <nav class="top-header__nav">
             <label class="nav__hamburger" for="nav">&#9776</label>
             <input class="nav__checkbox" type="checkbox" id="nav">
-            <div class="nav__items">
-                <a class="nav__item" href="index.html">Home</a>
-                <a class="nav__item" href="pages/entry_all.html">View All</a>
-                <a class="nav__item" href="pages/entry_new.html">Create New</a>
-            </div>
+            <ul class="nav__items">
+                <li><a class="nav__item" href="index.html">Home</a></li>
+                <li><a class="nav__item" href="pages/entry_all.html">View All</a></li>
+                <li><a class="nav__item" href="pages/entry_new.html">Create New</a></li>
+            </ul>
         </nav>
         <h1 class=gridH1>
             <span class="top-header__title">Spiral</span>
@@ -32,23 +32,18 @@
     </header>
     <main class="gridMain">
         <!-- Each entry in main is a grid item -->
-        <div class="gridLatest">
-            <h2 class="boxTitle">Latest Spiral</h2>
-            <article class="latest-entry">
-                <!-- Header will need to be it's own grid -->
+        <article class="latest-entry">
+                <h2 class="latest-entry__heading">Latest Spiral</h2>
                 <header class="latest-entry__header"> 
-                    <!-- To get the correct box shadow on the title, will need to wrap
-                    it in its own div -->
                     <h3 class="latest-entry__title">Last Entry Title</h3>
-                    <p class="latest-entry__date">Last Entry Date</p>
-                    <p class="latest-entry__author">Last Entry Author</p>
+                    <p class="latest-entry__date">2020/08/30</p>
+                    <p class="latest-entry__author">S. Edwards</p>
                 </header>
                 <section class="latest-entry__text">
                     <p>Last Entry Content few lines. Lorem ipsom jipson Lorem ipsom jipson Lorem ipsom jipson </p>
                 </section>
                 <button class="latest-entry__read-more">Read Full Entry</button>
             </article>
-        </div>
         <aside class="total-entry">
             <p class="total__amount">#</p>
             <p class="total__text">Total Spirals</p>
