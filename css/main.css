@@ -15,11 +15,6 @@
   src: url("../assets/fonts/AmityJack.woff2") form("woff2");
   font-weight: normal;
   font-style: normal;
-
-  font-family: "SketchenAllcapsRegular";
-  src: url("../assets/fonts/SketchenAllcaps.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 
 /** NORMALIZE CSS BEINGS AFTER THIS. DO NOT MESS WITH (UNLESS DELETING A SECTION). PUT ALL NEW CSS ABOVE THIS LINE.
@@ -79,7 +74,6 @@ pre {
 /* Text-level semantics
    ========================================================================== */
 
-
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -109,27 +103,6 @@ samp {
 
 small {
     font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
 }
 
 /* Forms
@@ -238,17 +211,6 @@ progress {
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
@@ -265,14 +227,6 @@ progress {
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
 }
 
 /**
@@ -305,8 +259,8 @@ body {
     /* outline: blue solid;
     background-color: rgb(128, 88, 128); */
     display: grid;
-    grid-template-columns: 10px 50px 20px 3fr;
-    grid-template-rows: 1fr 10px 1fr;
+    grid-template-columns: auto auto 20px 3fr;
+    grid-template-rows: auto 10px 1fr;
 }
 
 .top-header__logo {
