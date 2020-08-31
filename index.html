@@ -12,52 +12,54 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
-<body class="gridBody">
-    <header class="top-header">
-        <nav class="top-header__nav">
-            <label class="nav__hamburger" for="nav">&#9776</label>
-            <input class="nav__checkbox" type="checkbox" id="nav">
-            <ul class="nav__items">
-                <li class="nav__item"><a href="index.html">Home</a></li>
-                <li class="nav__item"><a href="pages/entry_all.html">View All</a></li>
-                <li class="nav__item"><a href="pages/entry_new.html">Create New</a></li>
-            </ul>
-        </nav>
-        <h1 class=gridH1>
-            <span class="top-header__title">Spiral</span>
-            <span class="top-header__subtitle top-header__subtitle--daily">Daily</span>
-            <span class="top-header__subtitle top-header__subtitle--journal">Journal</span>
-        </h1>
-        <div class="top-header__logo"></div>
-    </header>
-    <main class="gridMain">
-        <!-- Each entry in main is a grid item -->
-        <article class="latest-entry">
-            <h2 class="latest-entry__heading">Latest</h2>
-            <header class="latest-entry__header"> 
-                <h3 class="latest-entry__title">Last Entry Title</h3>
-                <p class="latest-entry__date">2020/08/30</p>
-                <p class="latest-entry__author">S. Edwards</p>
-            </header>
-            <section class="latest-entry__text">
-                <p>Last Entry Content few lines. Lorem ipsom jipson Lorem ipsom jipson Lorem ipsom jipson </p>
+<body>
+    <div class="gridBody">
+        <header class="top-header">
+            <nav class="top-header__nav">
+                <label class="nav__hamburger" for="nav">&#9776</label>
+                <input class="nav__checkbox" type="checkbox" id="nav">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                    <li class="nav__item"><a href="pages/entry_all.html">View All</a></li>
+                    <li class="nav__item"><a href="pages/entry_new.html">Create New</a></li>
+                </ul>
+            </nav>
+            <h1 class=gridH1>
+                <span class="top-header__title">Spiral</span>
+                <span class="top-header__subtitle top-header__subtitle--daily">Daily</span>
+                <span class="top-header__subtitle top-header__subtitle--journal">Journal</span>
+            </h1>
+            <div class="top-header__logo"></div>
+        </header>
+        <main class="gridMain">
+            <!-- Each entry in main is a grid item -->
+            <article class="latest-entry">
+                <h2 class="latest-entry__heading">Latest</h2>
+                <header class="latest-entry__header"> 
+                    <h3 class="latest-entry__title">Last Entry Title</h3>
+                    <p class="latest-entry__date">2020/08/30</p>
+                    <p class="latest-entry__author">S. Edwards</p>
+                </header>
+                <section class="latest-entry__text">
+                    <p>Last Entry Content few lines. Lorem ipsom jipson Lorem ipsom jipson Lorem ipsom jipson </p>
+                </section>
+                <button class="button latest-entry__button">Continue reading</button>
+            </article>
+            <button class="button button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
+            <button class="button button__new"><a href="pages/entry_new.html">Create Spiral</a></button>
+            <section class="sp-data">
+                <h2 class="sp-data__heading">Data</h2>
+                <aside class="sp-total">
+                    <p class="sp-total__amount">73</p>
+                    <p class="sp-total__text">Total Spirals Created</p>
+                </aside>
+                <aside class="sp-average">
+                    <p class="sp-average__amount">4</p>
+                    <p class="sp-average__text">Average Spirals per week</p>
+                </aside>
             </section>
-            <button class="button latest-entry__button">Continue reading</button>
-        </article>
-        <button class="button button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
-        <button class="button button__new"><a href="pages/entry_new.html">Create Spiral</a></button>
-        <section class="sp-data">
-            <h2 class="sp-data__heading">Data</h2>
-            <aside class="sp-total">
-                <p class="sp-total__amount">73</p>
-                <p class="sp-total__text">Total Spirals Created</p>
-            </aside>
-            <aside class="sp-average">
-                <p class="sp-average__amount">4</p>
-                <p class="sp-average__text">Average Spirals per week</p>
-            </aside>
-        </section>
-    </main>
+        </main>
+    </div>
     <!-- To get correct footer placement, may need to create a grid container -->
     <footer><span class="footer-name">S. Edwards</span><span class="footer-github"><a href="https://github.com/ste163">Github Profile</a></span><span class="footer-copyright">&copy 2020</span></footer>
     <script type="module" src="./scripts/main.js"></script>
