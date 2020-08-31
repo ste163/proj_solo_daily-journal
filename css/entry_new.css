@@ -115,10 +115,3 @@ Mobile needs column */
     border-bottom-style: solid;
     background-color: var(--colorDeselected);
 }
-
-footer {
-    background-color: violet;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
