@@ -33,26 +33,33 @@
     <main class="gridMain">
         <!-- Each entry in main is a grid item -->
         <article class="latest-entry">
-                <h2 class="latest-entry__heading">Latest Spiral</h2>
-                <header class="latest-entry__header"> 
-                    <h3 class="latest-entry__title">Last Entry Title</h3>
-                    <p class="latest-entry__date">2020/08/30</p>
-                    <p class="latest-entry__author">S. Edwards</p>
-                </header>
-                <section class="latest-entry__text">
-                    <p>Last Entry Content few lines. Lorem ipsom jipson Lorem ipsom jipson Lorem ipsom jipson </p>
-                </section>
-                <button class="button latest-entry__button">Continue reading</button>
-            </article>
-        <aside class="total-entry">
-            <p class="total__amount">#</p>
-            <p class="total__text">Total Spirals</p>
-        </aside>
+            <h2 class="latest-entry__heading">Latest</h2>
+            <header class="latest-entry__header"> 
+                <h3 class="latest-entry__title">Last Entry Title</h3>
+                <p class="latest-entry__date">2020/08/30</p>
+                <p class="latest-entry__author">S. Edwards</p>
+            </header>
+            <section class="latest-entry__text">
+                <p>Last Entry Content few lines. Lorem ipsom jipson Lorem ipsom jipson Lorem ipsom jipson </p>
+            </section>
+            <button class="button latest-entry__button">Continue reading</button>
+        </article>
         <button class="button button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
-        <button class="button button__new"><a href="pages/entry_new.html">Enter New Spiral</a></button>
+        <button class="button button__new"><a href="pages/entry_new.html">Create Spiral</a></button>
+        <section class="sp-data">
+            <h2 class="sp-data__heading">Data</h2>
+            <aside class="sp-total">
+                <p class="sp-total__amount">73</p>
+                <p class="sp-total__text">Total Spirals Created</p>
+            </aside>
+            <aside class="sp-average">
+                <p class="sp-average__amount">4</p>
+                <p class="sp-average__text">Average Spirals per week</p>
+            </aside>
+        </section>
     </main>
     <!-- To get correct footer placement, may need to create a grid container -->
-    <footer>S.T. Edwards <a href="https://github.com/ste163">Github Profile</a> &copy 2020</footer>
+    <footer><span class="footer-name">S. Edwards</span><span class="footer-github"><a href="https://github.com/ste163">Github Profile</a></span><span class="footer-copyright">&copy 2020</span></footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

@@ -267,6 +267,11 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
+  font-weight: 100;
+  padding: 0 0 5px 0;
+  color: var(--bodyText);
+  width: 25vmax;
+  border-bottom: 6px solid var(--spiralBlue);
 }
 
 h3 {
@@ -275,6 +280,7 @@ h3 {
 }
 
 .button {
+  font-size: 1.2em;
   border: none;
   text-align: left;
   text-decoration: none;
@@ -295,7 +301,6 @@ h3 {
   display: inline-block;
   color: white;
   align-self: center;
-  z-index: 99;
 }
 
 
@@ -306,7 +311,6 @@ h3 {
   padding: 10px;
   background-color: var(--backgroundYellow);
   position: absolute;
-  z-index: 99;
   font-size: 1.2em;
 }
 
@@ -366,8 +370,8 @@ TOP YELLOW BAR
 ******* */
 
 .top-header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 10vw 75vw 10vw;
     position: sticky;
     padding: 7px;
     background-color: var(--backgroundYellow);
@@ -389,8 +393,6 @@ TOP YELLOW BAR
 .top-header__title {
   margin: 0;
   color: var(--spiralBlue);
-  /* align-self is a grid property
-  to place items in cells */
   font-family: "Amity Jack", Arial;
   font-size: 1em;
   letter-spacing: 0.3em;
@@ -414,7 +416,7 @@ TOP YELLOW BAR
 
 .top-header__subtitle--journal {
   place-self: end end;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
 }
 
 /***
@@ -430,7 +432,8 @@ END TOP YELLOW BAR
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-  grid-gap: 15px;
+  grid-gap: 10px;
+  justify-self: center;
 }
 
 /* MAIN CONTENT GRID ITEMS */
@@ -439,20 +442,24 @@ END TOP YELLOW BAR
 .latest-entry {
   margin: 10px 10px 10px 10px;
   justify-self: center;
+  width: 90vw;
+  height: 40vh;
   grid-row-start: 1;
   grid-column: 1 / span 2;
-  z-index: -1;
 }
 
 .latest-entry__header {
   margin: 0 0 0 20px;
+  z-index: -1;
 }
 
 .latest-entry__heading {
-  font-weight: 100;
+  /* EVERYTHING IS IN H2 */
+  /* font-weight: 100;
+  padding: 0 0 5px 0;
   color: var(--bodyText);
   width: 25vmax;
-  border-bottom: 6px solid var(--spiralBlue);
+  border-bottom: 6px solid var(--spiralBlue); */
 }
 
 .latest-entry__title {
@@ -472,11 +479,14 @@ END TOP YELLOW BAR
 }
 
 .latest-entry__button {
+  font-size: 0.8em;
   float: right;
-  margin: 0 10px 0 20px; /* right margin must match text*/
-  border-bottom: 6px solid var(--spiralBlue);
-  text-align: left;
-  width: 40vmin;
+  margin: 0 10px 0 0px; /* right margin must match text*/
+  padding-right: 20px;
+  border-bottom: 4px solid var(--spiralBlue);
+  text-align: right;
+  width: 12em;
+  height: 2em;
 }
 
 .latest-entry__button:hover {
@@ -491,14 +501,17 @@ a {
   text-decoration: none
 }
 
+.flexButtons{
+  display: flex;
+}
 
 .button__view-all {
   grid-row: 2;
   grid-column: 1;
   border-left: 6px solid var(--spiralPink);
-  margin: 10px 10px 10px 10px;
   height: 3em;
-  width: 10em;
+  width: 40vw;
+  margin-left: 10px;
 }
 
 .button__view-all:hover {
@@ -510,8 +523,9 @@ a {
   grid-row: 2;
   grid-column: 2;
   border-left: 6px solid var(--spiralPink);
-  margin: 10px 10px 10px 10px;
-  width: 10em;
+  height: 3em;
+  width: 40vw;
+  padding-right: 10px;
 }
 
 .button__new:hover {
@@ -519,7 +533,76 @@ a {
   transition: 200ms;
 }
 
+/***
+****
+********** DATA **************
+****
+***/
+
+.sp-data {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  height: 35vh;
+}
+
+.sp-data__heading {
+  grid-column-start: 2;
+  place-self: end;
+  margin-right: 10px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.sp-total {
+  width: 40vw;
+  place-self: center;
+}
+
+.sp-total__amount {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.sp-total__text {
+  text-align: center;
+  padding: 0px 10px 0 10px;
+  margin: 0;
+}
+
+.sp-average {
+  width: 40vw;
+  place-self: center;
+}
+
+.sp-average__amount {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.sp-average__text {
+  text-align: center;
+  padding: 0px 10px 0 10px;
+  margin: 0;
+}
+
 /* FOOTER */
-.footer {
-  align-self: center;
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-name {
+}
+
+.footer-github {
+}
+
+.footer-copyright {
 }
