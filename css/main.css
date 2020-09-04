@@ -411,6 +411,7 @@ END TOP YELLOW BAR
   position: absolute;
   background-color: var(--highlightPink);
   transform: translateX(-100vw);
+  padding: 15px 0
 }
 
 .sp-form__h2 {

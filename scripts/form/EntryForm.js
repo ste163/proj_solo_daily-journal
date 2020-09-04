@@ -1,4 +1,5 @@
-// Need to import a saveEntry function from the provider.
+import { saveEntry } from "../JournalDataProvider.js"
+
 const eventHub = document.querySelector(".gridMain");
 const entryDOMtarget = document.querySelector(".sp-form");
 
@@ -22,6 +23,8 @@ eventHub.addEventListener("click", e => {
             title: entryTitle.value,
             text: entryText.value
         }
+
+        saveEntry(newEntry);
     }
 })
 
@@ -60,7 +63,7 @@ export const renderEntryForm = () => {
                 <label class="new__label" for="s-text" id="s-text" name="s-text">Text</label>
                 <textarea class="new__text--text" name="s-text" rows="8" placeholder="You can save all sorts of data."></textarea>
         </fieldset>
-        <input id="new__save-btn" class="new__save-btn" type="submit" value="Save Spiral">
+        <button type="button" id="new__save-btn" class="new__save-btn">Save Spiral</button>
     </form>
     `
 }
