@@ -1,22 +1,31 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "07/24/2025",
-            "author": "Sam",
-            "mood": "Ok",
-            "concept": "HTML & CSS",
-            "title": "First Title",
-            "text": "We talked about HTML components and how to make grid layouts with Flexbox in CSS."
-        },
-        {
-            "id": 2,
-            "date": "07/24/2026",
-            "author": "Sam",
-            "mood": "Great",
-            "concept": "CSS",
-            "title": "Second Title",
-            "text": "CSS Grid seems cool. Gotta learn more flexbox, too."
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "author": "Sam",
+      "mood": "Ok",
+      "concept": "HTML & CSS",
+      "title": "First Title",
+      "text": "We talked about HTML components and how to make grid layouts with Flexbox in CSS."
+    },
+    {
+      "id": 2,
+      "date": "07/24/2026",
+      "author": "Sam",
+      "mood": "Great",
+      "concept": "CSS",
+      "title": "Second Title",
+      "text": "CSS Grid seems cool. Gotta learn more flexbox, too."
+    },
+    {
+      "date": "2020-09-04",
+      "author": "Sam",
+      "mood": "fantastic",
+      "concept": "JS, HTML, CSS, APIs",
+      "title": "Forms, wow",
+      "text": "Well, it took most of today, but I finally got all the form JS working. I also completely redid the CSS for the journal! This is great! So much better and more responsive. Needs to have the wide-screen layout fixed up though.",
+      "id": 3
+    }
+  ]
 }

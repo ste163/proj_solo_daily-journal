@@ -7,15 +7,19 @@
   --highlightYellow: #E9EB68;
 
   --bodyText: #2D2D2D;
+
 }
 
 @font-face {
-  /* Custom fonts are for PERSONAL use only. This is a demostration project */
+  /* Custom fonts are for PERSONAL use only. This is a demonstration project */
   font-family: "Amity Jack";
   src: url("../assets/fonts/AmityJack.woff2") form("woff2");
   font-weight: normal;
   font-style: normal;
+
+  font-family: 'Heebo', sans-serif;
 }
+
 
 /** NORMALIZE CSS BEINGS AFTER THIS. DO NOT MESS WITH (UNLESS DELETING A SECTION). PUT ALL NEW CSS ABOVE THIS LINE.
  * 1. Correct the line height in all browsers.
@@ -121,6 +125,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  resize: none;
 }
 
 /**
@@ -183,6 +188,7 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+  border-style: none;
 }
 
 /**
@@ -264,9 +270,10 @@ h1 {
 }
 
 h2 {
+  font-family: "Heebo", sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: 100;
+  font-weight: 200;
   padding: 0 0 5px 0;
   color: var(--bodyText);
   width: 25vmax;
@@ -274,11 +281,15 @@ h2 {
 }
 
 h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 800;
   margin: 0;
   padding: 0;
 }
 
 .button {
+  font-family: "Heebo", sans-serif;
+  font-weight: 800;
   font-size: 1.2em;
   border: none;
   text-align: left;
@@ -385,6 +396,7 @@ END TOP YELLOW BAR
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   justify-self: center;
+  grid-row-gap: 10px;
 }
 
 /* MAIN CONTENT GRID ITEMS */
@@ -392,9 +404,52 @@ END TOP YELLOW BAR
 
 /* ENTRY FORM */
 .sp-form {
+  display: grid;
+  grid-template-columns: 15vmin auto 15vmin;
+  align-content: center;
+  height: 90vh;
   position: absolute;
+  background-color: var(--highlightPink);
   transform: translateX(-100vw);
-  background-color: var(--spiralPink)
+  padding: 15px 0
+}
+
+.sp-form__h2 {
+  grid-column: 1 / span 3;
+  place-self: center;
+  width: 100%;
+  border-bottom: none;
+  text-align: center;
+}
+
+label {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+}
+
+.new {
+  display: flex;
+  flex-flow: column;
+  grid-column: 2;
+}
+
+.new__center {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.new__save-btn {
+  font-family: "Heebo", sans-serif;
+  font-weight: 800;
+  background-color: transparent;
+  border: 3px solid var(--spiralBlue);
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.new__save-btn:hover {
+  background-color: var(--highlightBlue);
 }
 
 /* SLIDING ANIMATION */
@@ -447,11 +502,11 @@ END TOP YELLOW BAR
 }
 
 .latest-entry__date {
-  margin: 0;
+  margin: 10px 0;
 }
 
 .latest-entry__author {
-  margin: 0;
+  margin: 5px 0;
 }
 
 .latest-entry__text {
@@ -466,11 +521,12 @@ END TOP YELLOW BAR
   text-align: right;
   width: 12em;
   height: 2em;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .latest-entry__button:hover {
   background-color: var(--highlightBlue);
-  transition: 200ms;
 }
 
 
@@ -494,11 +550,12 @@ a {
   margin-left: 10px;
   place-self: center;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .button__new:hover {
   background-color: var(--highlightPink);
-  transition: 200ms;
+
 }
 
 .button__view-all {
@@ -509,11 +566,11 @@ a {
   width: 40vmin;
   margin-left: 10px;
   place-self: center;
+  transition: 0.3s;
 }
 
 .button__view-all:hover {
   background-color: var(--highlightPink);
-  transition: 200ms;
 }
 /***
 ****
