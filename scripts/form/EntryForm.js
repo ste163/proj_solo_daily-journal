@@ -37,6 +37,7 @@ eventHub.addEventListener("click", e => {
 
 export const renderEntryForm = () => {
     entryDOMtarget.innerHTML = `
+    <button class="sp-form__back-btn button__slider" type="button">&#128896</button>
     <h2 class="sp-form__h2">Create a new Spiral</h2>
     <form class="new" action="">
         <fieldset class="new__center">

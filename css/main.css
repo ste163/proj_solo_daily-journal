@@ -414,8 +414,18 @@ END TOP YELLOW BAR
   padding: 15px 0
 }
 
+.sp-form__back-btn {
+  grid-row: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0 0 5px 0;
+  font-size: 2em;
+  color: var(--spiralBlue);
+  cursor: pointer;
+}
+
 .sp-form__h2 {
-  grid-column: 1 / span 3;
+  grid-column: 2;
   place-self: center;
   width: 100%;
   border-bottom: none;
