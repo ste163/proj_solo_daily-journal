@@ -15,7 +15,7 @@ body {
 consistent linespacing in text boxes */
 textarea { 
     height: auto; 
-    overflow: scroll;
+    overflow: vertical;
     resize: none;
 }
 
@@ -114,11 +114,4 @@ Mobile needs column */
     border-style: none;
     border-bottom-style: solid;
     background-color: var(--colorDeselected);
-}
-
-footer {
-    background-color: violet;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
 }
