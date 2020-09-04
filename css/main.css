@@ -183,6 +183,7 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+  border-style: none;
 }
 
 /**
@@ -392,9 +393,20 @@ END TOP YELLOW BAR
 
 /* ENTRY FORM */
 .sp-form {
+  display: grid;
+  grid-template-columns: 10vmin auto 10vmin;
   position: absolute;
   transform: translateX(-100vw);
-  background-color: var(--spiralPink)
+  background-color: var(--highlightPink);
+}
+
+.new {
+  grid-column: 2;
+}
+
+.new__two-column {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* SLIDING ANIMATION */
