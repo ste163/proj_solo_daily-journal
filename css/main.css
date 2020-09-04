@@ -389,6 +389,35 @@ END TOP YELLOW BAR
 
 /* MAIN CONTENT GRID ITEMS */
 
+
+/* ENTRY FORM */
+.sp-form {
+  position: absolute;
+  transform: translateX(-100vw);
+  background-color: var(--spiralPink)
+}
+
+/* SLIDING ANIMATION */
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+}
+  
+@keyframes slide-in {
+  100% { transform: translateX(0vw); }
+}
+
+  
+@keyframes slide-out {
+  0% { transform: translateX(0vw); }
+  100% { transform: translateX(-100vw); }
+}
+
+
 /* ENTRY SECTION */
 .latest-entry {
   margin: 10px 10px 10px 10px;
@@ -479,6 +508,7 @@ a {
   padding-right: 10px;
   margin-left: 10px;
   place-self: center;
+  cursor: pointer;
 }
 
 .button__new:hover {
