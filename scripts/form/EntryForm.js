@@ -25,6 +25,13 @@ eventHub.addEventListener("click", e => {
         }
 
         saveEntry(newEntry);
+        // To clear fields
+        entryAuthor.value = "";
+        entryDate.value = "";
+        entryMood.value = "select";
+        entryConcepts.value = "";
+        entryTitle.value = "";
+        entryText.value = "";
     }
 })
 
@@ -43,6 +50,7 @@ export const renderEntryForm = () => {
         <fieldset class="new__center">
             <label class="new__label new__label--small" for="s-mood">How's your Mood?</label>
             <select class="new__mood--dropdown" id="s-mood" name="s-mood">
+                <option value="select">Select an option</option>
                 <option value="fantastic">Fantastic</option>
                 <option value="groovy">Groovy</option>
                 <option value="funky">Funky</option>
