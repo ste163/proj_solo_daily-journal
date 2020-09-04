@@ -15,16 +15,8 @@
 <body>
     <div class="gridBody">
         <header class="top-header">
-            <nav class="top-header__nav">
-                <label class="nav__hamburger" for="nav">&#9776</label>
-                <input class="nav__checkbox" type="checkbox" id="nav">
-                <ul class="nav__items">
-                    <li class="nav__item"><a href="index.html">Home</a></li>
-                    <li class="nav__item"><a href="pages/entry_all.html">View All</a></li>
-                    <li class="nav__item"><a href="pages/entry_new.html">Create New</a></li>
-                </ul>
-            </nav>
-            <h1 class=gridH1>
+            <div class="top-header__nav"><button class="nav__btn"><a class="nav__link" href="./index.html">Home</a></button></div>
+            <h1 class=top-header__h1-grid>
                 <span class="top-header__title">Spiral</span>
                 <span class="top-header__subtitle top-header__subtitle--daily">Daily</span>
                 <span class="top-header__subtitle top-header__subtitle--journal">Journal</span>
@@ -33,6 +25,9 @@
         </header>
         <main class="gridMain">
             <!-- Each entry in main is a grid item -->
+            <section class="sp-form slide-out">
+                TEST DATA
+            </section>
             <article class="latest-entry">
                 <h2 class="latest-entry__heading">Latest</h2>
                 <header class="latest-entry__header"> 
@@ -45,8 +40,8 @@
                 </section>
                 <button class="button latest-entry__button">Continue reading</button>
             </article>
+            <button class="button button__new">Create Spiral</button>
             <button class="button button__view-all"><a href="pages/entry_all.html">View All Spirals</a></button>
-            <button class="button button__new"><a href="pages/entry_new.html">Create Spiral</a></button>
             <section class="sp-data">
                 <h2 class="sp-data__heading">Data</h2>
                 <aside class="sp-total">
