@@ -17,6 +17,15 @@
       "concept": "CSS",
       "title": "Second Title",
       "text": "CSS Grid seems cool. Gotta learn more flexbox, too."
+    },
+    {
+      "date": "2020-09-04",
+      "author": "Sam",
+      "mood": "fantastic",
+      "concept": "JS, HTML, CSS, APIs",
+      "title": "Forms, wow",
+      "text": "Well, it took most of today, but I finally got all the form JS working. I also completely redid the CSS for the journal! This is great! So much better and more responsive. Needs to have the wide-screen layout fixed up though.",
+      "id": 3
     }
   ]
 }
