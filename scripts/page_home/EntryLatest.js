@@ -17,9 +17,7 @@ export const EntryLatest = () => {
 //takes the newest entry array and renders ONLY the last item
 const latestRenderer = (entryArray) => {
     const domTarget = document.querySelector(".latest-entry")
-    console.log(entryArray);
     const latestEntry = entryArray[entryArray.length - 1];
-    console.log(latestEntry);
     let HTMLItem = EntryLatestHTML(latestEntry)
     domTarget.innerHTML = HTMLItem;
 }
