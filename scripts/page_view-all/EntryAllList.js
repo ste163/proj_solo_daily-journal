@@ -1,20 +1,20 @@
-import { useEntries, getEntries } from "./EntryDataProvider.js"
-import { EntryHTML } from "./EntryHTML.js"
+import { useEntries, getEntries } from "../EntryDataProvider.js"
+import { EntryAllHTML } from "./EntryAllHTML.js"
 
-export const EntryList = () => {
+export const listEntryAll = () => {
     // Use the journal entry data from the data provider component
     getEntries()
     .then(() => {
         const entries = useEntries()
-        entryRenderer(entries)
+        entryAllRenderer(entries)
     })
 }
 
-const entryRenderer = (entryArray) => {
+const entryAllRenderer = (entryArray) => {
     const domTarget = document.querySelector(".test-entries")
     let HTMLArray =  `${
         entryArray.map(entry => {
-            return EntryHTML(entry);
+            return EntryAllHTML(entry);
         }).join("")
     }`
     domTarget.innerHTML = HTMLArray;

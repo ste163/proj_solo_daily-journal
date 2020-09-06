@@ -1,7 +1,7 @@
 import { getEntries } from "../EntryDataProvider.js"
-import { EntryList } from "../EntryList.js";
+import { listEntryAll } from "./EntryAllList.js";
 
 console.log("MAIN MODULE LOADED.")
 
 getEntries();
-EntryList();
+listEntryAll();
