@@ -2,7 +2,7 @@
  *  Purpose: To render a single journal entry as an
  *           HTML representation of the data
  */
-export const JournalEntryHTML = (entry) => {
+export const EntryHTML = (entry) => {
     return `
         <article id="entry--${entry.id}" class="TEST__Entry">
                 <h2>${entry.title}</h2>

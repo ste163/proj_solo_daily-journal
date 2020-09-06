@@ -1,4 +1,4 @@
-import { saveEntry } from "../JournalDataProvider.js"
+import { saveEntry } from "../EntryDataProvider.js"
 
 const eventHub = document.querySelector(".gridMain");
 const entryDOMtarget = document.querySelector(".sp-form");
