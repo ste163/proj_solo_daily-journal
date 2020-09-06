@@ -6,7 +6,7 @@ eventHub.addEventListener("entryStateChanged", e => {
     EntryLatest();
 })
 
-export const EntryLatest = () => {
+export const listEntryLatest = () => {
     getEntries()
     .then(() => {
         const entries = useEntries();

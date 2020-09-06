@@ -288,6 +288,10 @@ h3 {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .button {
   font-family: "Heebo", sans-serif;
   font-weight: 800;
@@ -516,24 +520,25 @@ label {
   margin: 5px 0;
 }
 
+.latest-entry__concept {
+  margin: 5px 0;
+}
+
+.latest-entry__mood {
+  margin: 5px 0;
+}
+
 .latest-entry__text {
   margin: 0 10px 0 20px;
 }
 
-.latest-entry__button {
-  font-size: 0.8em;
+.latest-entry__line {
   float: right;
   margin: 0 10px 0 0px; /* right margin must match text*/
   border-bottom: 4px solid var(--spiralBlue);
   text-align: right;
   width: 12em;
   height: 2em;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.latest-entry__button:hover {
-  background-color: var(--highlightBlue);
 }
 
 
