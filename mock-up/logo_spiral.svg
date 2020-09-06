@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="logo_spiral.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg1672"
+   version="1.1"
+   viewBox="0 0 132.29166 132.29167"
+   height="500"
+   width="500">
+  <defs
+     id="defs1666" />
+  <sodipodi:namedview
+     inkscape:guide-bbox="true"
+     showguides="true"
+     inkscape:showpageshadow="false"
+     units="px"
+     showborder="true"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1018"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="291.21598"
+     inkscape:cx="87.352911"
+     inkscape:zoom="0.7"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <sodipodi:guide
+       inkscape:color="rgb(0,0,255)"
+       inkscape:locked="false"
+       inkscape:label=""
+       id="guide2285"
+       orientation="0,1"
+       position="0,66.145832" />
+    <sodipodi:guide
+       inkscape:color="rgb(0,0,255)"
+       inkscape:locked="false"
+       inkscape:label=""
+       id="guide2287"
+       orientation="-1,0"
+       position="66.145832,132.29166" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata1669">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       inkscape:label="blue_back"
+       id="blue_back"
+       style="fill:none;fill-opacity:1;stroke:#57a8c6;stroke-width:1.55317;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 36.692521,74.748649 a 29.417754,29.417754 0 0 1 5.172302,-38.74961 29.417754,29.417754 0 0 1 39.088282,0.60217" />
+    <path
+       inkscape:label="blue_middle"
+       id="blue_middle"
+       style="fill:none;fill-opacity:1;stroke:#3f9cbe;stroke-width:2.32977;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 43.751537,68.664659 a 29.417754,29.417754 0 0 1 5.172302,-38.74961 29.417754,29.417754 0 0 1 39.088286,0.60218" />
+    <path
+       inkscape:label="blue_front"
+       id="blue_front"
+       style="fill:none;fill-opacity:1;stroke:#0f83ae;stroke-width:5.06244;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 50.810689,64.133839 a 29.417754,29.417754 0 0 1 5.172158,-38.74962 29.417754,29.417754 0 0 1 39.088288,0.60216" />
+    <path
+       inkscape:label="pink_back"
+       id="pink_back"
+       style="fill:none;fill-opacity:1;stroke:#f95dd8;stroke-width:1.55317;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 71.259665,66.832429 a 29.417754,29.417754 0 0 1 2.40065,2.4758 29.417754,29.417754 0 0 1 -44.566867,38.411031 29.417754,29.417754 0 0 1 -2.09422,-2.73938" />
+    <path
+       inkscape:label="pink_middle"
+       id="pink_middle"
+       style="fill:none;fill-opacity:1;stroke:#f846d2;stroke-width:2.32977;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 78.318685,60.748439 a 29.417754,29.417754 0 0 1 2.40064,2.4758 29.417754,29.417754 0 0 1 -44.566869,38.411031 29.417754,29.417754 0 0 1 -2.09422,-2.739381" />
+    <path
+       inkscape:label="pink_front"
+       id="pink_front"
+       style="fill:none;fill-opacity:1;stroke:#f618c7;stroke-width:5.06244;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 85.377685,53.111289 a 29.417754,29.417754 0 0 1 2.40065,2.47576 29.417754,29.417754 0 0 1 -44.566863,38.41102 29.417754,29.417754 0 0 1 -2.094228,-2.73937" />
+  </g>
+</svg>

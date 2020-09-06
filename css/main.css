@@ -40,6 +40,7 @@
 
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 /**
@@ -337,6 +338,10 @@ TOP YELLOW BAR
   transform: rotate(180deg);
 }
 
+.top-header__nav {
+  justify-self: end;
+}
+
 .top-header__logo {
   width: 50px;
   height: 70px;
@@ -397,6 +402,7 @@ END TOP YELLOW BAR
   grid-template-rows: auto auto auto;
   justify-self: center;
   grid-row-gap: 10px;
+  width: 100vw;
 }
 
 /* MAIN CONTENT GRID ITEMS */
@@ -404,6 +410,7 @@ END TOP YELLOW BAR
 
 /* ENTRY FORM */
 .sp-form {
+  will-change: transform;
   display: grid;
   grid-template-columns: 15vmin auto 15vmin;
   align-content: center;
@@ -411,7 +418,8 @@ END TOP YELLOW BAR
   position: absolute;
   background-color: var(--highlightPink);
   transform: translateX(-100vw);
-  padding: 15px 0
+  padding: 15px 0;
+  width: 100vw;
 }
 
 .sp-form__back-btn {
@@ -710,7 +718,7 @@ footer {
   .gridMain {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     justify-self: center;
     grid-gap: 5px;
   }
@@ -722,7 +730,7 @@ footer {
     height: 3em;
     width: 40vmin;
     margin-left: 10px;
-    place-self: center;
+    place-self: end;
   }
 
   .button__view-all {
@@ -732,7 +740,7 @@ footer {
     height: 3em;
     width: 40vmin;
     margin-left: 10px;
-    place-self: center;
+    place-self: end;
   }
 
   /**
@@ -740,9 +748,18 @@ footer {
 **/
 
 .sp-form {
-
-  
+  width: 50vmax;
 }
+
+/**
+********** Latest Entry **************
+**/
+
+.latest-entry {
+  height: 30vh;
+  place-self: center;
+}
+
 
 /**
 ********** DATA **************
@@ -768,11 +785,11 @@ footer {
 
   .sp-total{
     width: 35vmax;
-    place-self: end;
+    place-self: center;
   }
 
   .sp-average {
     width: 35vmax;
-    place-self: end;
+    place-self: center;
   }
 }
