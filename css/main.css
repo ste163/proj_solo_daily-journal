@@ -652,7 +652,7 @@ footer {
   margin-top: 5vh;
 }
 
-/* WIDE VIEW */
+/********** WIDE VIEW **********/
 @media screen and (min-width: 450px) {
 
   .gridBody {
@@ -714,8 +714,8 @@ footer {
     justify-self: center;
     grid-gap: 5px;
   }
-
-  .button__view-all {
+  
+  .button__new {
     grid-row: 2;
     grid-column: 1;
     border-left: 6px solid var(--spiralPink);
@@ -725,7 +725,7 @@ footer {
     place-self: center;
   }
 
-  .button__new {
+  .button__view-all {
     grid-row: 3;
     grid-column: 1;
     border-left: 6px solid var(--spiralPink);
@@ -735,6 +735,14 @@ footer {
     place-self: center;
   }
 
+  /**
+********** FORM **************
+**/
+
+.sp-form {
+
+  
+}
 
 /**
 ********** DATA **************
