@@ -496,7 +496,6 @@ label {
   margin: 10px 10px 10px 10px;
   justify-self: left;
   width: 80vmin;
-  height: 40vh;
   grid-row-start: 1;
   grid-column: 1 / span 2;
 }
@@ -756,7 +755,6 @@ footer {
 **/
 
 .latest-entry {
-  height: 30vh;
   place-self: center;
 }
 

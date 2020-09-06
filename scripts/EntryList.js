@@ -12,10 +12,10 @@ export const EntryList = () => {
 
 const entryRenderer = (entryArray) => {
     const domTarget = document.querySelector(".test-entries")
-    let HTMLarray =  `${
+    let HTMLArray =  `${
         entryArray.map(entry => {
             return EntryHTML(entry);
         }).join("")
     }`
-    domTarget.innerHTML = HTMLarray;
+    domTarget.innerHTML = HTMLArray;
 }
