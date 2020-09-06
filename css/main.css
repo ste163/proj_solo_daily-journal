@@ -493,7 +493,7 @@ label {
 
 /* ENTRY SECTION */
 .latest-entry {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 50px 10px;
   justify-self: left;
   width: 80vmin;
   grid-row-start: 1;
