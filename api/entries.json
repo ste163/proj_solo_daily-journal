@@ -44,6 +44,15 @@
       "title": "Arrays fix problems",
       "text": "I think I fixed my issue with the journal list not showing the right item. I didn't have it set to the right array.",
       "id": 5
+    },
+    {
+      "date": "2020-09-06",
+      "author": "ST Edwards",
+      "mood": "funky",
+      "concept": "JavaScript, HTML",
+      "title": "Totals!",
+      "text": "Somehow, I programmed the totals to show without messing up! Talk about first tries!",
+      "id": 6
     }
   ]
 }
