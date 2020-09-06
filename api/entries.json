@@ -2,7 +2,7 @@
   "entries": [
     {
       "id": 1,
-      "date": "07/24/2025",
+      "date": "2020-08-25",
       "author": "Sam",
       "mood": "Ok",
       "concept": "HTML & CSS",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "date": "07/24/2026",
+      "date": "2020-08-25",
       "author": "Sam",
       "mood": "Great",
       "concept": "CSS",
@@ -26,6 +26,24 @@
       "title": "Forms, wow",
       "text": "Well, it took most of today, but I finally got all the form JS working. I also completely redid the CSS for the journal! This is great! So much better and more responsive. Needs to have the wide-screen layout fixed up though.",
       "id": 3
+    },
+    {
+      "date": "2020-09-06",
+      "author": "Sam Edwards",
+      "mood": "fantastic",
+      "concept": "JavaScript, HTML",
+      "title": "Making stuff work",
+      "text": "After reviewing the code for the view all page, I was able to make the home page show the latest entry.",
+      "id": 4
+    },
+    {
+      "date": "2020-09-06",
+      "author": "Sam Edwards",
+      "mood": "confused",
+      "concept": "JavaScript",
+      "title": "Arrays fix problems",
+      "text": "I think I fixed my issue with the journal list not showing the right item. I didn't have it set to the right array.",
+      "id": 5
     }
   ]
 }
