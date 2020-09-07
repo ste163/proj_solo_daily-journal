@@ -3,7 +3,7 @@ export const EntryAllHTML = (entryObj) => {
     return `
     <li id="entry__id--${entryObj.id}">
         <header class="entry__header"> 
-            <h2 class="entry__title">${entryObj.title}</h3>
+            <h3 class="entry__title">${entryObj.title}</h3>
             <p class="entry__date"><em>${entryObj.date}</em></p>
             <p class="entry__author">${entryObj.author}</p>
             <p class="entry__concept"><strong>Concepts</strong>: ${entryObj.concept}</p>

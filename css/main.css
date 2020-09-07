@@ -505,42 +505,42 @@ label {
 }
 
 .latest-entry__header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
   margin: 0 0 0 20px;
 }
 
 .latest-entry__title {
-  margin: 10px 0 0 0;
+  grid-column: 1 / span 2;
+  margin: 10px 0 5px 0;
 }
 
 .latest-entry__date {
-  margin: 10px 0;
+  grid-column: 2;
+  font-size: 0.8em;
+  margin: 5px 0;
 }
 
 .latest-entry__author {
+  grid-column: 1;
+  font-size: 0.8em;
   margin: 5px 0;
 }
 
 .latest-entry__concept {
-  margin: 5px 0;
+  font-size: 0.8em;
+  margin-bottom: 5px;
 }
 
 .latest-entry__mood {
-  margin: 5px 0;
+  font-size: 0.8em;
+  margin-bottom: 5px;
 }
 
 .latest-entry__text {
   margin: 0 10px 0 20px;
 }
-
-.latest-entry__line {
-  float: right;
-  margin: 0 10px 0 0px; /* right margin must match text*/
-  border-bottom: 4px solid var(--spiralBlue);
-  text-align: right;
-  width: 12em;
-  height: 2em;
-}
-
 
 /* MAKE A TAGS HAVE SPECIAL BUTTON CLASS */
 a {
