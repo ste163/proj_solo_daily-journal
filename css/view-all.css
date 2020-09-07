@@ -17,6 +17,32 @@ li {
     grid-gap: 5px;
 }
 
+.entries {
+    width: 70vw;
+    margin: 10px 20px 0;
+}
+
+.list-entry__container {
+    margin-bottom: 20px;
+}
+
+.list-entry__header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.list-entry__title {
+    grid-column: 1 / span 2;
+}
+
+.list-entry__text {
+    margin: 10px 5px 15px 5px;
+}
+
+.header__item {
+    font-size: 0.9em;
+    margin: 3px 5px;
+}
 
 /* Mobile Specific */
 @media screen and (max-width: 450px) {
@@ -24,4 +50,11 @@ li {
         place-self: center start;
     }
 
+}
+
+/* Wide Specific */
+@media screen and (min-width: 450px) {
+    .list-entry__header {
+        grid-template-columns: 30vmin 30vmin;
+    }
 }
