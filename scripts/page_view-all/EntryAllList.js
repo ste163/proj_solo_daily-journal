@@ -11,7 +11,7 @@ export const listEntryAll = () => {
 }
 
 const entryAllRenderer = (entryArray) => {
-    const domTarget = document.querySelector(".test-entries")
+    const domTarget = document.querySelector(".entries")
     let HTMLArray =  `${
         entryArray.map(entry => {
             return EntryAllHTML(entry);

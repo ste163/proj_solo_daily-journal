@@ -1,14 +1,19 @@
 // Generate HTML for use on the View All page
-export const EntryAllHTML = (entry) => {
+export const EntryAllHTML = (entryObj) => {
     return `
-        <article id="entry--${entry.id}" class="TEST__Entry">
-                <h2>${entry.title}</h2>
-                <p>${entry.date}</p>
-                <p>Written by ${entry.author}</p>
-                <p>How were you feeling? ${entry.mood}</p>
-                <p>Concepts covered: ${entry.concept}</p>
-                <p>${entry.text}</p>
-                </li><button>EDIT</button><button>DELETE</button>
-        </article>
+    <li id="entry__id--${entryObj.id}">
+        <h2 class="entry__heading">Latest</h2>
+        <header class="entry__header"> 
+            <h3 class="entry__title">${entryObj.title}</h3>
+            <p class="entry__date"><em>${entryObj.date}</em></p>
+            <p class="entry__author">${entryObj.author}</p>
+            <p class="entry__concept"><strong>Concepts</strong>: ${entryObj.concept}</p>
+            <p class="entry__mood"><strong>Mood</strong>: ${entryObj.mood}</p>
+        </header>
+        <section class="entry__text">
+            <p>${entryObj.text}</p>
+        </section>
+        <button>Edit</button><button>Delete</button>
+    </li>
     `
 }
