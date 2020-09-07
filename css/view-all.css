@@ -1,0 +1,15 @@
+@import "main.css";
+
+.gridBodyAll {
+    display: grid;
+    justify-self: center;
+    grid-gap: 5px;
+}
+
+.top-header__subtitle--daily {
+    font-size: 0.7em;
+}
+
+.top-header__subtitle--journal {
+   font-size: 0.75em; 
+}
