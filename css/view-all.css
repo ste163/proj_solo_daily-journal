@@ -6,10 +6,11 @@
     grid-gap: 5px;
 }
 
-.top-header__subtitle--daily {
-    font-size: 0.7em;
-}
 
-.top-header__subtitle--journal {
-   font-size: 0.75em; 
+/* Mobile Specific */
+@media screen and (max-width: 450px) {
+    .top-header__subtitle--daily {
+        place-self: center start;
+    }
+
 }

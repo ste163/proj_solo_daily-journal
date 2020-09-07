@@ -668,6 +668,10 @@ footer {
     writing-mode: horizontal-tb;
   }
 
+  .top-header {
+    height: 75px;
+  }
+
   .top-header__h1-grid {
     display: grid;
     grid-template-columns: auto;
