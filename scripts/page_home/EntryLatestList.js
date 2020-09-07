@@ -3,7 +3,7 @@ import { EntryLatestHTML } from "./EntryLatestHTML.js"
 const eventHub = document.querySelector(".gridMain");
 
 eventHub.addEventListener("entryStateChanged", e => {
-    EntryLatest();
+    listEntryLatest();
 })
 
 export const listEntryLatest = () => {
