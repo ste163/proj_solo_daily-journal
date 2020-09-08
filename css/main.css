@@ -6,6 +6,8 @@
   --highlightPink: #fff0fc;
   --highlightYellow: #E9EB68;
 
+  --headerShadow: #ededcf;
+
   --bodyText: #2D2D2D;
 
 }
@@ -21,7 +23,7 @@
 }
 
 
-/** NORMALIZE CSS BEINGS AFTER THIS. DO NOT MESS WITH (UNLESS DELETING A SECTION). PUT ALL NEW CSS ABOVE THIS LINE.
+/** NORMALIZE CSS BEINGS AFTER THIS. DO NOT MESS WITH (UNLESS DELETING A SECTION).
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
@@ -33,7 +35,6 @@
 
 /* Sections
    ========================================================================== */
-
 /**
  * Remove the margin in all browsers.
  */
@@ -41,38 +42,6 @@
 body {
     margin: 0px;
     overflow-x: hidden;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-    font-size: 2em;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -209,23 +178,6 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
@@ -321,6 +273,7 @@ TOP YELLOW BAR
     display: grid;
     grid-template-columns: 10vw 75vw 10vw;
     position: sticky;
+    box-shadow: 0px 2px 10px var(--headerShadow);
     padding: 7px;
     background-color: var(--backgroundYellow);
 }
@@ -420,7 +373,7 @@ END TOP YELLOW BAR
   align-content: center;
   height: 90vh;
   position: absolute;
-  background-color: var(--highlightPink);
+  background-color: #fafafa;
   transform: translateX(-100vw);
   padding: 15px 0;
   width: 100vw;

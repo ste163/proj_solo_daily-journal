@@ -12,7 +12,10 @@ export const EntryAllHTML = (entryObj) => {
         <section class="list-entry__text">
             <p>${entryObj.text}</p>
         </section>
-        <button class="list-entry__btn-edit">Edit</button><button class="list-entry__btn-delete">Delete</button>
+        <div class="list-entry__flex-btn">
+            <button class="list-entry__btn list-entry__btn--edit">Edit</button>
+            <button class="list-entry__btn list-entry__btn--delete">Delete</button>
+        </div>
     </li>
     `
 }
