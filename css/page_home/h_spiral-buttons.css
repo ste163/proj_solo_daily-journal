@@ -1,0 +1,31 @@
+.button__create {
+    grid-row: 2;
+    grid-column: 1;
+    border-left: 6px solid var(--spiralPink);
+    height: 3em;
+    width: 40vmin;
+    padding-right: 10px;
+    margin-left: 10px;
+    place-self: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.button__create:hover {
+    background-color: var(--highlightPink);
+}
+  
+.button__view-all {
+    grid-row: 2;
+    grid-column: 2;
+    border-left: 6px solid var(--spiralPink);
+    height: 3em;
+    width: 40vmin;
+    margin-left: 10px;
+    place-self: center;
+    transition: 0.3s;
+}
+  
+.button__view-all:hover {
+    background-color: var(--highlightPink);
+}

@@ -1,4 +1,3 @@
-/* ENTRY FORM */
 .sp-form {
   will-change: transform;
   display: grid;
@@ -60,8 +59,7 @@ label {
   background-color: var(--highlightBlue);
 }
 
-/* SLIDING ANIMATION */
-
+/***** SLIDING ANIMATION *****/
 .slide-in {
   animation: slide-in 0.5s forwards;
 }

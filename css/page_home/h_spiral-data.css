@@ -1,0 +1,55 @@
+.sp-data {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 30vh;
+}
+  
+.sp-data__heading {
+    grid-column-start: 2;
+    place-self: end center;
+    margin-right: 10px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.sp-total {
+    width: 40vw;
+    place-self: center;
+}
+
+.sp-total__amount {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.sp-total__text {
+    text-align: center;
+    padding: 0px 10px 0 10px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.sp-average {
+    width: 40vw;
+    place-self: center;
+}
+
+.sp-average__amount {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.sp-average__text {
+    text-align: center;
+    padding: 0px 10px 0 10px;
+    margin: 0;
+    font-weight: bolder;
+}

@@ -1,5 +1,8 @@
+@import "../variables-fonts.css";
+@import "../normalize.css";
+@import "../nav-bar.css";
+/* Something in the main.css is still affecting the nav-bar for wide-screen */
 @import "../main.css";
-
 /* REMOVE DEFAULT STYLING */
 ul {
     padding-inline-start: 0;

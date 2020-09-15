@@ -212,3 +212,9 @@ body {
     color: var(--bodyText);
     text-decoration: none
   }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+  }
