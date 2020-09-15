@@ -1,51 +1,14 @@
 /* Imports must be cascading in correct order */
 /* All content is inside the grid, so h_grid-main.css
   must be one of the first entries */
+@import "variables-fonts.css";
 @import "normalize.css";
-@import "h_grid-main.css";
+@import "./page_home/h_grid-main.css";
 @import "nav-bar.css";
-@import "h_entry-form.css";
-@import "h_latest-entry.css";
-
-:root { 
-  --backgroundYellow: #FBFD54;
-
-  --spiralBlue: #0F83AE;
-  --spiralPink: #F618C7;
-
-  --highlightBlue: #e2f6fd;
-  --highlightPink: #fff0fc;
-  --highlightYellow: #E9EB68;
-
-  --headerShadow: #ededcf;
-
-  --bodyText: #2D2D2D;
-}
+@import "./page_home/h_entry-form.css";
+@import "./page_home/h_latest-entry.css";
 
 
-
-@font-face {
-  /* Custom fonts are for PERSONAL use only. This is a demonstration project */
-  font-family: "Amity Jack";
-  src: url("../assets/fonts/AmityJack.woff2") form("woff2");
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: 'Heebo', sans-serif;
-}
-
-
-
-
-/* MAKE A TAGS HAVE SPECIAL BUTTON CLASS */
-a {
-  color: var(--bodyText);
-  text-decoration: none
-}
-
-.flexButtons{
-  display: flex;
-}
 
 .button__new {
   grid-row: 2;

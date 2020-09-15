@@ -207,3 +207,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     font-weight: bolder;
   }
+
+  a {
+    color: var(--bodyText);
+    text-decoration: none
+  }
