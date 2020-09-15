@@ -1,0 +1,74 @@
+.top-header {
+    display: grid;
+    grid-template-columns: 10vw 75vw 10vw;
+    position: sticky;
+    box-shadow: 0px 2px 10px var(--headerShadow);
+    padding: 7px;
+    background-color: var(--backgroundYellow);
+}
+
+.top-header__nav {
+  grid-column: 1;
+  align-self: center;
+}
+
+.nav__btn {
+  border-style: none;
+  background-color: transparent;
+}
+
+.nav__link {
+  color: var(--spiralPink);
+  font-family: "Amity Jack", Arial;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.top-header__nav {
+  justify-self: end;
+}
+
+.top-header__logo {
+  width: 50px;
+  height: 70px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzIuMyAxMzIuMyIgaGVpZ2h0PSI1MDAiIHdpZHRoPSI1MDAiIHZlcnNpb249IjEiPjxwYXRoIGQ9Im0zNi43IDc0LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzU3YThjNiIvPjxwYXRoIGQ9Im00My44IDY4LjdhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6IzNmOWNiZSIvPjxwYXRoIGQ9Im01MC44IDY0LjFhMjkuNCAyOS40IDAgMCAxIDUuMi0zOC43IDI5LjQgMjkuNCAwIDAgMSAzOS4xIDAuNiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6IzBmODNhZSIvPjxwYXRoIGQ9Im03MS4zIDY2LjhhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y5NWRkOCIvPjxwYXRoIGQ9Im03OC4zIDYwLjdhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6MjtzdHJva2U6I2Y4NDZkMiIvPjxwYXRoIGQ9Im04NS40IDUzLjFhMjkuNCAyOS40IDAgMCAxIDIuNCAyLjUgMjkuNCAyOS40IDAgMCAxLTQ0LjYgMzguNCAyOS40IDI5LjQgMCAwIDEtMi4xLTIuNyIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2Utd2lkdGg6NTtzdHJva2U6I2Y2MThjNyIvPjwvc3ZnPg==) no-repeat center center;
+  background-size: 50px 70px;
+  place-self: center;
+  grid-column: 3;
+}
+
+.top-header__h1-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-column: 2;
+}
+
+.top-header__title {
+  margin: 0;
+  color: var(--spiralBlue);
+  font-family: "Amity Jack", Arial;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  place-self: end end;
+}
+
+.top-header__subtitle {
+  font-family: "Amity Jack", Arial;
+  font-size: 0.65em;
+  letter-spacing: 0.1em;
+  color: var(--spiralPink);
+}
+
+.top-header__subtitle--daily {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  font-size: .6em;
+  writing-mode: vertical-lr;
+  place-self: end start;
+}
+
+.top-header__subtitle--journal {
+  place-self: end end;
+  letter-spacing: 0.3em;
+}
