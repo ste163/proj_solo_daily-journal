@@ -1,0 +1,45 @@
+.latest-entry {
+    margin: 10px 10px 50px 10px;
+    justify-self: left;
+    width: 80vmin;
+    grid-row-start: 1;
+    grid-column: 1 / span 2;
+  }
+  
+  .latest-entry__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin: 0 0 0 20px;
+  }
+  
+  .latest-entry__title {
+    grid-column: 1 / span 2;
+    margin: 10px 0 5px 0;
+  }
+  
+  .latest-entry__date {
+    grid-column: 2;
+    font-size: 0.8em;
+    margin: 5px 0;
+  }
+  
+  .latest-entry__author {
+    grid-column: 1;
+    font-size: 0.8em;
+    margin: 5px 0;
+  }
+  
+  .latest-entry__concept {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+  
+  .latest-entry__mood {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+  
+  .latest-entry__text {
+    margin: 10px 10px 0 20px;
+  }

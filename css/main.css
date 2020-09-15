@@ -1,5 +1,11 @@
+/* Imports must be cascading in correct order */
+/* All content is inside the grid, so h_grid-main.css
+  must be one of the first entries */
 @import "normalize.css";
-@import "navigationBar.css";
+@import "h_grid-main.css";
+@import "nav-bar.css";
+@import "h_entry-form.css";
+@import "h_latest-entry.css";
 
 :root { 
   --backgroundYellow: #FBFD54;
@@ -16,6 +22,8 @@
   --bodyText: #2D2D2D;
 }
 
+
+
 @font-face {
   /* Custom fonts are for PERSONAL use only. This is a demonstration project */
   font-family: "Amity Jack";
@@ -26,197 +34,8 @@
   font-family: 'Heebo', sans-serif;
 }
 
-body {
-  font-family: sans-serif;
-  color: var(--bodyText);
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-family: "Heebo", sans-serif;
-  margin: 0;
-  padding: 0;
-  font-weight: 200;
-  padding: 0 0 5px 0;
-  color: var(--bodyText);
-  width: 25vmax;
-  border-bottom: 6px solid var(--spiralBlue);
-}
-
-h3 {
-  font-family: "Heebo", sans-serif;
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-}
-
-.button {
-  font-family: "Heebo", sans-serif;
-  font-weight: 800;
-  font-size: 1.2em;
-  border: none;
-  text-align: left;
-  text-decoration: none;
-  color: var(--bodyText);
-  background-color: rgba(255, 255, 255, 0);
-  font-weight: bolder;
-}
-
-/* WHOLE BODY GRID */
-.gridBody {
-  display: grid;
-}
-
-/* MAIN CONTENT GRID */
-.gridMain {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  justify-self: center;
-  grid-row-gap: 10px;
-  width: 100vw;
-}
-
-/* MAIN CONTENT GRID ITEMS */
 
 
-/* ENTRY FORM */
-.sp-form {
-  will-change: transform;
-  display: grid;
-  grid-template-columns: 15vmin auto 15vmin;
-  align-content: center;
-  height: 90vh;
-  position: absolute;
-  background-color: #fafafa;
-  transform: translateX(-100vw);
-  padding: 15px 0;
-  width: 100vw;
-}
-
-.sp-form__back-btn {
-  grid-row: 1;
-  background-color: transparent;
-  border: none;
-  padding: 0 0 5px 0;
-  font-size: 2em;
-  color: var(--spiralBlue);
-  cursor: pointer;
-}
-
-.sp-form__h2 {
-  grid-column: 2;
-  place-self: center;
-  width: 100%;
-  border-bottom: none;
-  text-align: center;
-}
-
-label {
-  font-family: "Heebo", sans-serif;
-  font-weight: 400;
-}
-
-.new {
-  display: flex;
-  flex-flow: column;
-  grid-column: 2;
-}
-
-.new__center {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.new__save-btn {
-  font-family: "Heebo", sans-serif;
-  font-weight: 800;
-  background-color: transparent;
-  border: 3px solid var(--spiralBlue);
-  cursor: pointer;
-  font-size: 1.1em;
-  transition: 0.3s;
-}
-
-.new__save-btn:hover {
-  background-color: var(--highlightBlue);
-}
-
-/* SLIDING ANIMATION */
-
-.slide-in {
-  animation: slide-in 0.5s forwards;
-}
-
-.slide-out {
-  animation: slide-out 0.5s forwards;
-}
-  
-@keyframes slide-in {
-  100% { transform: translateX(0vw); }
-}
-
-  
-@keyframes slide-out {
-  0% { transform: translateX(0vw); }
-  100% { transform: translateX(-100vw); }
-}
-
-
-/* ENTRY SECTION */
-.latest-entry {
-  margin: 10px 10px 50px 10px;
-  justify-self: left;
-  width: 80vmin;
-  grid-row-start: 1;
-  grid-column: 1 / span 2;
-}
-
-.latest-entry__header {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto;
-  margin: 0 0 0 20px;
-}
-
-.latest-entry__title {
-  grid-column: 1 / span 2;
-  margin: 10px 0 5px 0;
-}
-
-.latest-entry__date {
-  grid-column: 2;
-  font-size: 0.8em;
-  margin: 5px 0;
-}
-
-.latest-entry__author {
-  grid-column: 1;
-  font-size: 0.8em;
-  margin: 5px 0;
-}
-
-.latest-entry__concept {
-  font-size: 0.8em;
-  margin-bottom: 5px;
-}
-
-.latest-entry__mood {
-  font-size: 0.8em;
-  margin-bottom: 5px;
-}
-
-.latest-entry__text {
-  margin: 10px 10px 0 20px;
-}
 
 /* MAKE A TAGS HAVE SPECIAL BUTTON CLASS */
 a {

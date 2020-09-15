@@ -4,8 +4,7 @@
 */
 
 html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.15;
 }
 
 /* Sections
@@ -94,17 +93,6 @@ select { /* 1 */
 }
 
 /**
-* Correct the inability to style clickable types in iOS and Safari.
-*/
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
-
-/**
 * Remove the inner border and padding in Firefox.
 */
 
@@ -158,8 +146,7 @@ legend {
 */
 
 [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
+    outline-offset: -2px;
 }
 
 /**
@@ -168,10 +155,55 @@ legend {
 */
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
+    font: inherit;
 }
 
 h2 {
     margin: 0;
 }
+
+/* MORE DEFAULT CSS STYLING */
+
+body {
+    font-family: sans-serif;
+    color: var(--bodyText);
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    padding: 0 0 5px 0;
+    color: var(--bodyText);
+    width: 25vmax;
+    border-bottom: 6px solid var(--spiralBlue);
+  }
+  
+  h3 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .button {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    color: var(--bodyText);
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bolder;
+  }
