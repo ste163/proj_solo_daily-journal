@@ -1,8 +1,9 @@
 @import "../variables-fonts.css";
 @import "../normalize.css";
 @import "../nav-bar.css";
-/* Something in the main.css is still affecting the nav-bar for wide-screen */
-@import "../page_home/h_main.css";
+
+/* Need new wide-screen file for va. */
+@import "../page_home/h06_wide-screen.css";
 /* REMOVE DEFAULT STYLING */
 ul {
     padding-inline-start: 0;
@@ -19,7 +20,6 @@ li {
     justify-self: center;
     grid-gap: 5px;
 }
-
 
 .entries {
     margin: 10px 20px 0;
