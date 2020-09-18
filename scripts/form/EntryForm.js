@@ -2,6 +2,7 @@
 
 import { saveEntry } from "../data-providers/EntryProvider.js"
 import { getMoods, useMoods } from "../data-providers/MoodProvider.js"
+import { getConcepts, useConcepts } from "../data-providers/ConceptProvider.js"
 import { slideAnim } from "../animations/anim_slide.js";
 
 const eventHub = document.querySelector(".gridMain");
@@ -43,8 +44,10 @@ export const listEntryForm = () => {
 // Render all HTML for form
 const renderEntryForm = () => {
     getMoods()
+    .then(getConcepts)
     .then(() => {
-        const allMoods = useMoods();
+        const allMoods = useMoods()
+        const allConcepts = useConcepts();
         return entryDOMtarget.innerHTML = `
         <button class="sp-form__back-btn button__slider" type="button">&#128896</button>
         <h2 class="sp-form__h2">Create a new Spiral</h2>
@@ -66,7 +69,14 @@ const renderEntryForm = () => {
             </fieldset>
             <fieldset class="new__center">
                 <label class="new__label" for="s-concept" id="s-concept" name="s-concept">Concepts Covered</label>
-                <textarea class="new__concept--text" name="s-concept" rows="2" placeholder="JavaScript, HTML, CSS, APIs"></textarea>
+                <div class="concepts">
+                ${
+                    allConcepts.map((concept) => {
+                        return `<label class="concept__checkbox" for="concept--${concept.id}">${concept.label}</label>
+                        <input type="checkbox" id="concept--${concept.id}" name="${concept.label}" value="HTML">`
+                    }).join("")
+                }
+                </div>
             </fieldset>
             <fieldset class="new__center">
                     <label class="new__label" for="s-title" id="s-title" name="s-title">Title</label>

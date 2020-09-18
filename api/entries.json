@@ -31,5 +31,27 @@
       "id": 5,
       "label": "Super groovy"
     }
+  ],
+  "concepts": [
+    {
+      "id": 1,
+      "label": "HTML"
+    },
+    {
+      "id": 2,
+      "label": "CSS"
+    },
+    {
+      "id": 3,
+      "label": "JavaScript"
+    },
+    {
+      "id": 4,
+      "label": "APIs"
+    },
+    {
+      "id": 5,
+      "label": "Databases"
+    }
   ]
 }
