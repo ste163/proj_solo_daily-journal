@@ -1,6 +1,6 @@
 // Module Goals:
     //Display notes on DOM
-import { useEntries, getEntries } from "../EntryDataProvider.js"
+import { useEntries, getEntries } from "../data-providers/EntryProvider.js"
 import { EntryAllHTML } from "./EntryAllHTML.js"
 
 //Fetch latest entries, then invoke rendering

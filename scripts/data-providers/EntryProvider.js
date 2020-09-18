@@ -19,16 +19,16 @@ export const useEntries = () => {
     return sortedByDate
 }
 
-//Fetch entries from database
+// Fetch entries from database
 export const getEntries = () => {
     return fetch("http://localhost:8088/entries?_expand=mood")
     .then(entries => entries.json())
     .then(convertedEntries => journal = convertedEntries)
 }
 
-//Save entry to database then inform eventHub
+// Save entry to database then inform eventHub
 export const saveEntry = entryObj => {
-    return fetch("http://localhost:8088/entries", {
+    return fetch("http://localhost:8088/entries?_expand=mood", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
