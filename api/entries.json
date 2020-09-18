@@ -1,12 +1,17 @@
 {
   "entries": [
     {
-      "date": 1600452406016,
+      "date": 1600460409724,
       "author": "Sam",
       "moodId": 5,
-      "concept": "JavaScript",
-      "title": "Deleting!",
-      "text": "It works!! After just a handful of updates, the delete button is fully functional!",
+      "conceptId": [
+        "HTML",
+        "JavaScript",
+        "APIs",
+        "Databases"
+      ],
+      "title": "Concepts are checkboxes",
+      "text": "It took most of the afternoon, but the concepts are checkboxes and they actually save values!",
       "id": 1
     }
   ],
@@ -30,6 +35,28 @@
     {
       "id": 5,
       "label": "Super groovy"
+    }
+  ],
+  "concepts": [
+    {
+      "id": 1,
+      "label": "HTML"
+    },
+    {
+      "id": 2,
+      "label": "CSS"
+    },
+    {
+      "id": 3,
+      "label": "JavaScript"
+    },
+    {
+      "id": 4,
+      "label": "APIs"
+    },
+    {
+      "id": 5,
+      "label": "Databases"
     }
   ]
 }

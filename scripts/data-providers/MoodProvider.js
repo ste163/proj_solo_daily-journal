@@ -1,10 +1,10 @@
 // Module goals:
     // Export moods from database
 
-let moods = [];
+let moods = []
 
-// Return a copy of moods
-export const useMoods = () => moods.slice();
+// Return copy of moods
+export const useMoods = () => moods.slice()
 
 // Fetch moods from database
 export const getMoods = () => {
