@@ -7,7 +7,7 @@ export const EntryAllHTML = (entryObj) => {
             <p class="header__item list-entry__author">${entryObj.author}</p>
             <p class="header__item list-entry__date"><em>${entryObj.date}</em></p>
             <p class="header__item list-entry__concept"><strong>Concepts</strong>: ${entryObj.concept}</p>
-            <p class="header__item list-entry__mood"><strong>Mood</strong>: ${entryObj.mood}</p>
+            <p class="header__item list-entry__mood"><strong>Mood</strong>: ${entryObj.mood.label}</p>
         </header>
         <section class="list-entry__text">
             <p>${entryObj.text}</p>

@@ -6,7 +6,7 @@ export const EntryLatestHTML = (entryObj) => {
         <p class="latest-entry__author">${entryObj.author}</p>
         <p class="latest-entry__date"><em>${entryObj.date}</em></p>
         <p class="latest-entry__concept"><strong>Concepts</strong>: ${entryObj.concept}</p>
-        <p class="latest-entry__mood"><strong>Mood</strong>: ${entryObj.mood}</p>
+        <p class="latest-entry__mood"><strong>Mood</strong>: ${entryObj.mood.label}</p>
     </header>
     <section class="latest-entry__text">
         <p>${entryObj.text}</p>

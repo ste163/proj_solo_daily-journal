@@ -4,7 +4,7 @@
       "id": 1,
       "date": "2020-08-25",
       "author": "Sam",
-      "mood": "Ok",
+      "moodId": 4,
       "concept": "HTML & CSS",
       "title": "First Title",
       "text": "We talked about HTML components and how to make grid layouts with Flexbox in CSS."
@@ -13,7 +13,7 @@
       "id": 2,
       "date": "2020-08-25",
       "author": "Sam",
-      "mood": "Great",
+      "moodId": 3,
       "concept": "CSS",
       "title": "Second Title",
       "text": "CSS Grid seems cool. Gotta learn more flexbox, too."
@@ -21,7 +21,7 @@
     {
       "date": "2020-09-04",
       "author": "Sam",
-      "mood": "fantastic",
+      "moodId": 5,
       "concept": "JS, HTML, CSS, APIs",
       "title": "Forms, wow",
       "text": "Well, it took most of today, but I finally got all the form JS working. I also completely redid the CSS for the journal! This is great! So much better and more responsive. Needs to have the wide-screen layout fixed up though.",
@@ -30,7 +30,7 @@
     {
       "date": "2020-09-06",
       "author": "Sam Edwards",
-      "mood": "fantastic",
+      "moodId": 5,
       "concept": "JavaScript, HTML",
       "title": "Making stuff work",
       "text": "After reviewing the code for the view all page, I was able to make the home page show the latest entry.",
@@ -39,7 +39,7 @@
     {
       "date": "2020-09-06",
       "author": "Sam Edwards",
-      "mood": "confused",
+      "moodId": 1,
       "concept": "JavaScript",
       "title": "Arrays fix problems",
       "text": "I think I fixed my issue with the journal list not showing the right item. I didn't have it set to the right array.",
@@ -48,7 +48,7 @@
     {
       "date": "2020-09-06",
       "author": "ST Edwards",
-      "mood": "funky",
+      "moodId": 4,
       "concept": "JavaScript, HTML",
       "title": "Totals!",
       "text": "Somehow, I programmed the totals to show without messing up! Talk about first tries!",
@@ -57,11 +57,33 @@
     {
       "date": "2020-09-07",
       "author": "Sam",
-      "mood": "groovy",
+      "moodId": 3,
       "concept": "CSS, HTML",
       "title": "CSS is slow going",
       "text": "I've been using a mix of Grid and Flexbox to make this site. It's time consuming, but I can tell that I'm learning. I can quickly setup the layout now. It's playing with those margins and white space that take the most time now.",
       "id": 7
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Clueless"
+    },
+    {
+      "id": 2,
+      "label": "Did that do what I thought it did?"
+    },
+    {
+      "id": 3,
+      "label": "Oooh! I see."
+    },
+    {
+      "id": 4,
+      "label": "Chuggin' along."
+    },
+    {
+      "id": 5,
+      "label": "Super groovy"
     }
   ]
 }

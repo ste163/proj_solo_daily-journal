@@ -21,7 +21,7 @@ export const useEntries = () => {
 
 //Fetch entries from database
 export const getEntries = () => {
-    return fetch("http://localhost:8088/entries")
+    return fetch("http://localhost:8088/entries?_expand=mood")
     .then(entries => entries.json())
     .then(convertedEntries => journal = convertedEntries)
 }
