@@ -1,4 +1,4 @@
-// Module Goals:
+// Module goals:
     //Display notes on DOM
 import { useEntries, getEntries, deleteEntry } from "../data-providers/EntryProvider.js"
 import { EntryAllHTML } from "./EntryAllHTML.js"
