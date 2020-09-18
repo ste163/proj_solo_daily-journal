@@ -62,7 +62,6 @@ const renderEntryForm = () => {
                             return `<option value="${mood.id}">${mood.label}</option>`
                         }).join("")
                     }
-
                 </select>
             </fieldset>
             <fieldset class="new__center">

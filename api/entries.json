@@ -1,94 +1,22 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "2020-08-25",
-      "author": "Sam",
-      "moodId": 4,
-      "concept": "HTML & CSS",
-      "title": "First Title",
-      "text": "We talked about HTML components and how to make grid layouts with Flexbox in CSS."
-    },
-    {
-      "id": 2,
-      "date": "2020-08-25",
-      "author": "Sam",
-      "moodId": 3,
-      "concept": "CSS",
-      "title": "Second Title",
-      "text": "CSS Grid seems cool. Gotta learn more flexbox, too."
-    },
-    {
-      "date": "2020-09-04",
-      "author": "Sam",
-      "moodId": 5,
-      "concept": "JS, HTML, CSS, APIs",
-      "title": "Forms, wow",
-      "text": "Well, it took most of today, but I finally got all the form JS working. I also completely redid the CSS for the journal! This is great! So much better and more responsive. Needs to have the wide-screen layout fixed up though.",
-      "id": 3
-    },
-    {
-      "date": "2020-09-06",
-      "author": "Sam Edwards",
-      "moodId": 5,
-      "concept": "JavaScript, HTML",
-      "title": "Making stuff work",
-      "text": "After reviewing the code for the view all page, I was able to make the home page show the latest entry.",
-      "id": 4
-    },
-    {
-      "date": "2020-09-06",
-      "author": "Sam Edwards",
-      "moodId": 1,
-      "concept": "JavaScript",
-      "title": "Arrays fix problems",
-      "text": "I think I fixed my issue with the journal list not showing the right item. I didn't have it set to the right array.",
-      "id": 5
-    },
-    {
-      "date": "2020-09-06",
-      "author": "ST Edwards",
-      "moodId": 4,
-      "concept": "JavaScript, HTML",
-      "title": "Totals!",
-      "text": "Somehow, I programmed the totals to show without messing up! Talk about first tries!",
-      "id": 6
-    },
-    {
-      "date": "2020-09-07",
-      "author": "Sam",
-      "moodId": 3,
-      "concept": "CSS, HTML",
-      "title": "CSS is slow going",
-      "text": "I've been using a mix of Grid and Flexbox to make this site. It's time consuming, but I can tell that I'm learning. I can quickly setup the layout now. It's playing with those margins and white space that take the most time now.",
-      "id": 7
-    },
-    {
-      "date": "2020-09-18",
-      "author": "Sam",
-      "moodId": 3,
-      "concept": "JavaScript, Database",
-      "title": "Normalization rocks!",
-      "text": "Having Primary Keys and Foreign Keys makes organization so easy!",
-      "id": 8
-    },
-    {
-      "date": "2020-09-18",
+      "date": 1600447948430,
       "author": "Sam",
       "moodId": 2,
       "concept": "JavaScript, HTML",
-      "title": "Sliding form animation",
-      "text": "Currently, I've got everything working, but I can't get the new entry form to slide back. Only happened after I put it in the getMood function...",
-      "id": 9
+      "title": "Everything's gone",
+      "text": "So I had to delete all the old data because I made the date only save when you click the save button. No making fake entries!",
+      "id": 1
     },
     {
-      "date": "2020-09-18",
+      "date": 1600448007336,
       "author": "Sam",
-      "moodId": 1,
+      "moodId": 2,
       "concept": "JavaScript",
-      "title": "Homepage Broken",
-      "text": "Now the homepage isn't updating properly!!",
-      "id": 10
+      "title": "The New Journal",
+      "text": "Now should be the beginning of an improved journal script!",
+      "id": 2
     }
   ],
   "moods": [

@@ -12,10 +12,7 @@ const dispatchEntryStateChangeEvent = () => {
 
 // Return date-sorted copy of entries
 export const useEntries = () => {
-    const sortedByDate = journal.sort(
-        (currentEntry, nextEntry) =>
-            Date.parse(nextEntry.date) - Date.parse(currentEntry.date)
-    )
+    const sortedByDate = journal.reverse()
     return sortedByDate
 }
 
