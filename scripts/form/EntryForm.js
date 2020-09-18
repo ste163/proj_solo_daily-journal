@@ -12,17 +12,18 @@ const entryDOMtarget = document.querySelector(".sp-form");
 eventHub.addEventListener("click", e => {
     if (e.target.id === "new__save-btn") {
         const entryAuthor = document.querySelector(".new__author--text");
-        const entryDate = document.querySelector(".new__date--input");
         const entryMood = document.querySelector(".new__mood--dropdown");
-        const entryConcepts = document.querySelector(".new__concept--text");
+        const entryConcepts = document.querySelectorAll(".concept__checkbox");
         const entryTitle = document.querySelector(".new__title--text");
         const entryText = document.querySelector(".new__text--text");
+        debugger;
+        const conceptValues = getConceptValues(entryConcepts)
 
         const newEntry = {
             date: Date.now(),
             author: entryAuthor.value,
             moodId: parseInt(entryMood.value),
-            concept: entryConcepts.value,
+            conceptId: conceptValues,
             title: entryTitle.value,
             text: entryText.value
         }
@@ -37,8 +38,20 @@ eventHub.addEventListener("click", e => {
     }
 })
 
+// Invoke form rendering in main.js
 export const listEntryForm = () => {
     renderEntryForm();
+}
+
+// Return only concepts' values
+const getConceptValues = (ConceptsNodeList) => {
+    const conceptsArray = Array.from(ConceptsNodeList)
+    const filteredConcepts = conceptsArray.filter(concept => {
+       return concept.checked
+    })
+    return filteredConcepts.map(concept => {
+        return concept.value
+    })
 }
 
 // Render all HTML for form
@@ -72,8 +85,8 @@ const renderEntryForm = () => {
                 <div class="concepts">
                 ${
                     allConcepts.map((concept) => {
-                        return `<label class="concept__checkbox" for="concept--${concept.id}">${concept.label}</label>
-                        <input type="checkbox" id="concept--${concept.id}" name="${concept.label}" value="HTML">`
+                        return `<label class="concept__checkbox-label" for="concept--${concept.id}">${concept.label}</label>
+                        <input type="checkbox" class="concept__checkbox" id="concept--${concept.id}" name="${concept.label}" value="${concept.label}">`
                     }).join("")
                 }
                 </div>
