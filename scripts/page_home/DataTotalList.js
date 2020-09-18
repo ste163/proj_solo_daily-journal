@@ -1,4 +1,4 @@
-import {useEntries, getEntries } from "../EntryDataProvider.js"
+import {useEntries, getEntries } from "../data-providers/EntryProvider.js"
 import { DataTotalHTML } from "./DataTotalHTML.js"
 const eventHub = document.querySelector(".gridMain");
 

@@ -1,9 +1,6 @@
-//Slide animation requires the renderForm to be passed in.
-//It's the only way to have the form back button generate
-//Before the slide animator sets up.
+// Module goal: add click events for all buttons handling the slide for create form.
 
-export const slideAnim = (renderForm) => {
-    renderForm();
+export const slideAnim = () => {
     const createBtn = document.querySelectorAll(".button__slider")
     const slider = document.querySelector(".sp-form")
     for (const btn of createBtn) {
@@ -13,5 +10,4 @@ export const slideAnim = (renderForm) => {
             slider.setAttribute('class', isSlideOut ? 'slide-out sp-form' : 'slide-in sp-form');
         })
     }
-  
 }

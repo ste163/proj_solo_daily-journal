@@ -1,67 +1,44 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "2020-08-25",
+      "date": 1600447948430,
       "author": "Sam",
-      "mood": "Ok",
-      "concept": "HTML & CSS",
-      "title": "First Title",
-      "text": "We talked about HTML components and how to make grid layouts with Flexbox in CSS."
+      "moodId": 2,
+      "concept": "JavaScript, HTML",
+      "title": "Everything's gone",
+      "text": "So I had to delete all the old data because I made the date only save when you click the save button. No making fake entries!",
+      "id": 1
+    },
+    {
+      "date": 1600448007336,
+      "author": "Sam",
+      "moodId": 2,
+      "concept": "JavaScript",
+      "title": "The New Journal",
+      "text": "Now should be the beginning of an improved journal script!",
+      "id": 2
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Clueless"
     },
     {
       "id": 2,
-      "date": "2020-08-25",
-      "author": "Sam",
-      "mood": "Great",
-      "concept": "CSS",
-      "title": "Second Title",
-      "text": "CSS Grid seems cool. Gotta learn more flexbox, too."
+      "label": "Did that do what I thought it did?"
     },
     {
-      "date": "2020-09-04",
-      "author": "Sam",
-      "mood": "fantastic",
-      "concept": "JS, HTML, CSS, APIs",
-      "title": "Forms, wow",
-      "text": "Well, it took most of today, but I finally got all the form JS working. I also completely redid the CSS for the journal! This is great! So much better and more responsive. Needs to have the wide-screen layout fixed up though.",
-      "id": 3
+      "id": 3,
+      "label": "Oooh! I see."
     },
     {
-      "date": "2020-09-06",
-      "author": "Sam Edwards",
-      "mood": "fantastic",
-      "concept": "JavaScript, HTML",
-      "title": "Making stuff work",
-      "text": "After reviewing the code for the view all page, I was able to make the home page show the latest entry.",
-      "id": 4
+      "id": 4,
+      "label": "Chuggin' along."
     },
     {
-      "date": "2020-09-06",
-      "author": "Sam Edwards",
-      "mood": "confused",
-      "concept": "JavaScript",
-      "title": "Arrays fix problems",
-      "text": "I think I fixed my issue with the journal list not showing the right item. I didn't have it set to the right array.",
-      "id": 5
-    },
-    {
-      "date": "2020-09-06",
-      "author": "ST Edwards",
-      "mood": "funky",
-      "concept": "JavaScript, HTML",
-      "title": "Totals!",
-      "text": "Somehow, I programmed the totals to show without messing up! Talk about first tries!",
-      "id": 6
-    },
-    {
-      "date": "2020-09-07",
-      "author": "Sam",
-      "mood": "groovy",
-      "concept": "CSS, HTML",
-      "title": "CSS is slow going",
-      "text": "I've been using a mix of Grid and Flexbox to make this site. It's time consuming, but I can tell that I'm learning. I can quickly setup the layout now. It's playing with those margins and white space that take the most time now.",
-      "id": 7
+      "id": 5,
+      "label": "Super groovy"
     }
   ]
 }

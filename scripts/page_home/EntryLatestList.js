@@ -1,4 +1,4 @@
-import {useEntries, getEntries } from "../EntryDataProvider.js"
+import {useEntries, getEntries } from "../data-providers/EntryProvider.js"
 import { EntryLatestHTML } from "./EntryLatestHTML.js"
 const eventHub = document.querySelector(".gridMain");
 
@@ -9,8 +9,7 @@ eventHub.addEventListener("entryStateChanged", e => {
 export const listEntryLatest = () => {
     getEntries()
     .then(() => {
-        const entries = useEntries();
-        latestRenderer(entries);
+        latestRenderer(useEntries());
     })
 }
 
