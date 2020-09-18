@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Spirals</title>
-    <link rel="stylesheet" href="../css/entry_all.css">
+    <link rel="stylesheet" href="../css/page_view-all/va00_main.css">
+    <!-- FAVICON generated using favicon.io-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <button><a href="../index.html">&#128896 Back</a></button>
-        <h1>Current Spirals</h1>
-    </header>
-    <main>
-        <section>
-            <ul class="entries">
-                <li>ENTRY TITLE</li><button>EDIT</button><button>DELETE</button>
-                <li>ENTRY TITLE</li><button>EDIT</button><button>DELETE</button>
-                <li>ENTRY TITLE</li><button>EDIT</button><button>DELETE</button>
-                <li>ENTRY TITLE</li><button>EDIT</button><button>DELETE</button>
-                <li>ENTRY TITLE</li><button>EDIT</button><button>DELETE</button>
-            </ul>
-            <section class="test-entries">
-                <!-- AUTOPOPULATING from JournalDataProvider.js for testing purposes -->
+    <div class="gridBodyAll">
+        <header class="top-header">
+            <div class="top-header__nav"><button class="nav__btn"><a class="nav__link" href="../index.html">Back</a></button></div>
+            <h1 class=top-header__h1-grid>
+                <span class="top-header__title">Spiral</span>
+                <span class="top-header__subtitle top-header__subtitle--daily">Full</span>
+                <span class="top-header__subtitle top-header__subtitle--journal">List</span>
+            </h1>
+            <div class="top-header__logo"></div>
+        </header>
+        <main class="gridItemEntries">
+            <section>
+                <ul class="entries"></ul>
             </section>
-        </section>
-    </main>
+        </main>
+    </div>
     <footer>S.T. Edwards <a href="https://github.com/ste163">Github Profile</a> &copy 2020</footer>
     <script type="module" src="../scripts/page_view-all/view-all_main.js"></script>
 </body>

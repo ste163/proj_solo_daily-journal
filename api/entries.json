@@ -53,6 +53,15 @@
       "title": "Totals!",
       "text": "Somehow, I programmed the totals to show without messing up! Talk about first tries!",
       "id": 6
+    },
+    {
+      "date": "2020-09-07",
+      "author": "Sam",
+      "mood": "groovy",
+      "concept": "CSS, HTML",
+      "title": "CSS is slow going",
+      "text": "I've been using a mix of Grid and Flexbox to make this site. It's time consuming, but I can tell that I'm learning. I can quickly setup the layout now. It's playing with those margins and white space that take the most time now.",
+      "id": 7
     }
   ]
 }

@@ -1,0 +1,106 @@
+@import "../variables-fonts.css";
+@import "../normalize.css";
+@import "../nav-bar.css";
+
+/* Need new wide-screen file for va. */
+@import "../page_home/h06_wide-screen.css";
+/* REMOVE DEFAULT STYLING */
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.gridBodyAll {
+    display: grid;
+    justify-self: center;
+    grid-gap: 5px;
+}
+
+.entries {
+    margin: 10px 20px 0;
+}
+
+.list-entry__container {
+    margin-bottom: 20px;
+}
+
+.list-entry__header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.list-entry__title {
+    grid-column: 1 / span 2;
+}
+
+.list-entry__text {
+    margin: 10px 5px 15px 5px;
+}
+
+.header__item {
+    font-size: 0.9em;
+    margin: 3px 5px;
+}
+
+.list-entry__btn {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list-entry__btn:hover {
+    background-color: var(--highlightPink);
+}
+
+.list-entry__btn--edit {
+    border-left: 6px solid var(--spiralPink);
+}
+
+.list-entry__btn--delete {
+    border-left: 6px solid var(--spiralPink);
+}
+
+/* Mobile Specific */
+@media screen and (max-width: 450px) {
+    .top-header__subtitle--daily {
+        place-self: center start;
+    }
+
+    .list-entry__flex-btn {
+        display: flex;
+    }
+
+    .list-entry__btn {
+        width: 20vmax;
+    }
+}
+
+/* Wide Specific */
+@media screen and (min-width: 450px) {
+    .gridItemEntries {
+        place-self: center;
+        width: 50vw;
+    }
+
+    .list-entry__header {
+        grid-template-columns: 25vmin 20vmin;
+    }
+
+    .list-entry__flex-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .list-entry__btn {
+        width: 18vmin;
+    }
+}

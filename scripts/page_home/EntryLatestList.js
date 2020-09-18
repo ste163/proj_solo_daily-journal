@@ -3,7 +3,7 @@ import { EntryLatestHTML } from "./EntryLatestHTML.js"
 const eventHub = document.querySelector(".gridMain");
 
 eventHub.addEventListener("entryStateChanged", e => {
-    EntryLatest();
+    listEntryLatest();
 })
 
 export const listEntryLatest = () => {
@@ -17,7 +17,8 @@ export const listEntryLatest = () => {
 //takes the newest entry array and renders ONLY the last item
 const latestRenderer = (entryArray) => {
     const domTarget = document.querySelector(".latest-entry")
-    const latestEntry = entryArray[entryArray.length - 1];
+    // If you want the last item of the array, do entryArray[entryArray.length - 1]
+    const latestEntry = entryArray[0];
     let HTMLItem = EntryLatestHTML(latestEntry)
     domTarget.innerHTML = HTMLItem;
 }
