@@ -16,7 +16,7 @@ eventHub.addEventListener("click", e => {
         const entryConcepts = document.querySelectorAll(".concept__checkbox");
         const entryTitle = document.querySelector(".new__title--text");
         const entryText = document.querySelector(".new__text--text");
-        debugger;
+
         const conceptValues = getConceptValues(entryConcepts)
 
         const newEntry = {
