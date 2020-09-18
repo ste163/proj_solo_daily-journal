@@ -1,22 +1,13 @@
 {
   "entries": [
     {
-      "date": 1600447948430,
+      "date": 1600452406016,
       "author": "Sam",
-      "moodId": 2,
-      "concept": "JavaScript, HTML",
-      "title": "Everything's gone",
-      "text": "So I had to delete all the old data because I made the date only save when you click the save button. No making fake entries!",
-      "id": 1
-    },
-    {
-      "date": 1600448007336,
-      "author": "Sam",
-      "moodId": 2,
+      "moodId": 5,
       "concept": "JavaScript",
-      "title": "The New Journal",
-      "text": "Now should be the beginning of an improved journal script!",
-      "id": 2
+      "title": "Deleting!",
+      "text": "It works!! After just a handful of updates, the delete button is fully functional!",
+      "id": 1
     }
   ],
   "moods": [

@@ -55,18 +55,11 @@ li {
     margin: 10px;
     cursor: pointer;
     transition: 0.3s;
+    border-left: 6px solid var(--spiralPink);
 }
 
 .list-entry__btn:hover {
     background-color: var(--highlightPink);
-}
-
-.list-entry__btn--edit {
-    border-left: 6px solid var(--spiralPink);
-}
-
-.list-entry__btn--delete {
-    border-left: 6px solid var(--spiralPink);
 }
 
 /* Mobile Specific */
