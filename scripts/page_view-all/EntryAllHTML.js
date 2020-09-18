@@ -1,4 +1,4 @@
-// Generate HTML for use on the View All page
+// Module Goal: generate HTML for use on View All page
 export const EntryAllHTML = (entryObj) => {
     return `
     <li class="list-entry__container" id="list-entry__id--${entryObj.id}">

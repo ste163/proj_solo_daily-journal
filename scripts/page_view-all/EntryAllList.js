@@ -1,8 +1,10 @@
+// Module Goals:
+    //Display notes on DOM
 import { useEntries, getEntries } from "../EntryDataProvider.js"
 import { EntryAllHTML } from "./EntryAllHTML.js"
 
+//Fetch latest entries, then invoke rendering
 export const listEntryAll = () => {
-    // Use the journal entry data from the data provider component
     getEntries()
     .then(() => {
         const entries = useEntries()
@@ -10,6 +12,7 @@ export const listEntryAll = () => {
     })
 }
 
+//Render entries to DOM
 const entryAllRenderer = (entryArray) => {
     const domTarget = document.querySelector(".entries")
     let HTMLArray =  `${
