@@ -5,7 +5,19 @@ import { getMoods, useMoods } from "../data-providers/MoodProvider.js"
 import { getConcepts, useConcepts } from "../data-providers/ConceptProvider.js"
 
 const eventHub = document.querySelector(".gridMain");
-const entryDOMtarget = document.querySelector(".sp-form");
+const entryDOMtarget = document.querySelector(".modal");
+const modalContainer = document.querySelector(".modal__container");
+
+// Listen for modal button clicks
+eventHub.addEventListener("click", e => {
+    if (e.target.id === "modalOpen") {
+        modalContainer.classList.add("modal__show");
+    }
+    if (e.target.id === "modalClose") {
+        modalContainer.classList.remove("modal__show");
+    }
+});
+
 
 //When user presses save button, save entered field's data to database then reset fields
 eventHub.addEventListener("click", e => {
@@ -39,7 +51,7 @@ eventHub.addEventListener("click", e => {
 
 // Invoke form rendering in main.js
 export const listEntryForm = () => {
-    renderEntryForm();
+    renderEntryForm()
 }
 
 // Return only concepts' values
@@ -60,10 +72,7 @@ const renderEntryForm = () => {
     .then(() => {
         const allMoods = useMoods()
         const allConcepts = useConcepts();
-        return entryDOMtarget.innerHTML = `
-        <div class="modal">
-            <button class="sp-form__back-btn" type="button">&#128896</button>
-            <h2 class="sp-form__h2">Create a new Spiral</h2>
+        return entryDOMtarget.innerHTML += `
             <form class="new" action="">
                 <fieldset class="new__center">
                 <label class="new__label new__label--small" for="s-author">Author</label>
@@ -101,7 +110,6 @@ const renderEntryForm = () => {
                 </fieldset>
                 <button type="button" id="new__save-btn" class="new__save-btn">Save Spiral</button>
             </form>
-        </div>
         `
     })
 }

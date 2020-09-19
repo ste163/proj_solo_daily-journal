@@ -1,4 +1,6 @@
 .modal__container {
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   display: flex;
   align-items: center;
@@ -8,6 +10,12 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+.modal__container.modal__show {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .modal {
@@ -16,6 +24,10 @@
   background-color: red;
   padding: 30px;
   border-radius: 5px;
+}
+
+#modalClose {
+  width: 20%;
 }
 
 .sp-form {

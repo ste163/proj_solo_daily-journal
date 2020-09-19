@@ -37,9 +37,14 @@
             <div class="top-header__logo"></div>
         </header>
         <main class="gridMain">
-            <section class="sp-form modal__container"></section>
+            <section class="sp-form modal__container">
+                <div class="modal">
+                    <button id="modalClose" class="sp-form__back-btn" type="button">&#128896</button>
+                    <h2 class="sp-form__h2">Create a new Spiral</h2>
+                </div>
+            </section>
             <article class="latest-entry"></article>
-            <button class="button button__slider button__create">Create Spiral</button>
+            <button id="modalOpen" class="button button__create">Create Spiral</button>
             <a class="button__view-all" href="pages/view-all.html"><button class="button">View All Spirals</button></a>
             <section class="sp-data"></section>
         </main>
