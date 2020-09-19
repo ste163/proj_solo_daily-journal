@@ -20,7 +20,7 @@ export const listDataTotal = () => {
 }
 
 const totalRenderer = (entryArray) => {
-    const domTarget = document.querySelector(".sp-total")
+    const domTarget = document.querySelector(".sp-data")
     let totalHTML = DataTotalHTML(entryArray);
     domTarget.innerHTML = totalHTML;
 }

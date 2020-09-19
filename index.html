@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiral</title>
     <link rel="stylesheet" href="/css/page_home/h00_main.css">
-    <!-- FAVICON generated using favicon.io-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/android-icon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="gridBody">
+<body class="gridBody">
         <header class="top-header">
-            <div class="top-header__nav"><button class="nav__btn"><a class="nav__link" href="./index.html">Home</a></button></div>
             <h1 class=top-header__h1-grid>
                 <span class="top-header__title">Spiral</span>
                 <span class="top-header__subtitle top-header__subtitle--daily">Daily</span>
@@ -26,25 +37,13 @@
             <div class="top-header__logo"></div>
         </header>
         <main class="gridMain">
-            <!-- Each entry in main is a grid item -->
             <section class="sp-form slide-out"></section>
-            <article class="latest-entry">
-            </article>
+            <article class="latest-entry"></article>
             <button class="button button__slider button__create">Create Spiral</button>
-            <button class="button button__view-all"><a href="pages/view-all.html">View All Spirals</a></button>
-            <section class="sp-data">
-                <h2 class="sp-data__heading">Data</h2>
-                <aside class="sp-total">
-                </aside>
-                <aside class="sp-average">
-                    <p class="sp-average__amount">X</p>
-                    <p class="sp-average__text">is the most used mood.</p>
-                </aside>
-            </section>
+            <a class="button__view-all" href="pages/view-all.html"><button class="button">View All Spirals</button></a>
+            <section class="sp-data"></section>
         </main>
-    </div>
-    <!-- To get correct footer placement, may need to create a grid container -->
-    <footer><span class="footer-name">S. Edwards</span><span class="footer-github"><a href="https://github.com/ste163">Github Profile</a></span><span class="footer-copyright">&copy 2020</span></footer>
+        <footer><span class="footer-name">S. Edwards</span><span class="footer-github"><a href="https://github.com/ste163">Github Profile</a></span><span class="footer-copyright">&copy 2020</span></footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

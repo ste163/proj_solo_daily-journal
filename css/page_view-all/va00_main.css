@@ -2,8 +2,6 @@
 @import "../normalize.css";
 @import "../nav-bar.css";
 
-/* Need new wide-screen file for va. */
-@import "../page_home/h06_wide-screen.css";
 /* REMOVE DEFAULT STYLING */
 ul {
     padding-inline-start: 0;
