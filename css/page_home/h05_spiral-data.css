@@ -53,3 +53,35 @@
     margin: 0;
     font-weight: bolder;
 }
+
+@media screen and (min-width: 450px) {
+
+    .sp-data {
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        height: 20vh;
+        grid-gap: 25px;
+        justify-content: left;
+    }
+
+    .sp-data__heading {
+        margin: 0;
+        grid-column-start: 1;
+        place-self: center;
+        text-align: center;
+        width: 20vw;
+    }
+
+    .sp-total{
+        width: 35vmax;
+        place-self: center;
+    }
+
+    .sp-average {
+        width: 35vmax;
+        place-self: center;
+    }
+}

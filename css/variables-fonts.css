@@ -1,13 +1,9 @@
 :root { 
-    --backgroundYellow: #FBFD54;
-  
-    --spiralBlue: #0F83AE;
-    --spiralPink: #F618C7;
-  
-    --highlightBlue: #e2f6fd;
-    --highlightPink: #fff0fc;
-    --highlightYellow: #E9EB68;
-  
+    /* Color Scheme */
+    --mainBlue: #181935ff;
+    --accentGreen: #10be79ff;
+    --accentPurple: #b265e9ff;
+    
     /* Font color */
     --fontColor: #f0f0f0ff;
 

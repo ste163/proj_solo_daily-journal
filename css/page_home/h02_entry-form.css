@@ -5,7 +5,7 @@
   align-content: center;
   height: 90vh;
   position: absolute;
-  background-color: #fafafa;
+  background-color: lightgreen;
   transform: translateX(-100vw);
   padding: 15px 0;
   width: 100vw;
@@ -17,7 +17,7 @@
   border: none;
   padding: 0 0 5px 0;
   font-size: 2em;
-  color: var(--spiralBlue);
+  color: var(--mainBlue);
   cursor: pointer;
 }
 
@@ -30,8 +30,8 @@
 }
 
 label {
-  font-family: "Heebo", sans-serif;
-  font-weight: 400;
+  font-family: var(--heeboFont);
+  font-weight: var(--heeboMedium);
 }
 
 .new {
@@ -46,17 +46,17 @@ label {
 }
 
 .new__save-btn {
-  font-family: "Heebo", sans-serif;
-  font-weight: 800;
+  font-family: var(--heeboFont);
+  font-weight: var(--heeboBlack);
   background-color: transparent;
-  border: 3px solid var(--spiralBlue);
+  border: 3px solid var(--mainBlue);
   cursor: pointer;
   font-size: 1.1em;
   transition: 0.3s;
 }
 
 .new__save-btn:hover {
-  background-color: var(--highlightBlue);
+  background-color: yellow;
 }
 
 /***** SLIDING ANIMATION *****/
@@ -75,4 +75,10 @@ label {
 @keyframes slide-out {
   0% { transform: translateX(0vw); }
   100% { transform: translateX(-100vw); }
+}
+
+@media screen and (min-width: 450px) {
+  .sp-form {
+    width: 50vmax;
+  }
 }

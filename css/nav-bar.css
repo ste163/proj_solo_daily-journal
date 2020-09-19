@@ -16,7 +16,7 @@
 }
 
 .nav__link {
-  color: var(--spiralPink);
+  color: var(--fontColor);
   font-family: var(--heeboFont);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -43,21 +43,21 @@
 }
 
 .top-header__title {
+  color: var(--fontColor);
   font-family: var(--heeboFont);
   font-weight: var(--heeboThin);
   font-size: 1em;
-  margin: 0;
-  color: var(--spiralBlue);
   letter-spacing: 0.3em;
+  margin: 0;
   place-self: end end;
 }
 
 .top-header__subtitle {
+  color: var(--fontColor);
   text-transform: uppercase;
   font-family: var(--heeboFont);
   font-size: 0.65em;
   letter-spacing: 0.1em;
-  color: var(--spiralPink);
 }
 
 .top-header__subtitle--daily {
@@ -92,24 +92,17 @@
     .top-header__title {
         grid-column: 1 / span 2;
         margin: 0;
-        color: var(--spiralBlue);
-        font-family: var(--heeboFont);
         font-size: 1em;
         letter-spacing: 0.3em;
         place-self: center center;
     }
 
     .top-header__subtitle {
-        font-family: var(--heeboFont);
-        font-weight: var(--heeboBlack);
         font-size: 0.65em;
         letter-spacing: 0.3em;
-        color: var(--spiralPink);
     }
 
     .top-header__subtitle--daily {
-        font-weight: var(--heeboBlack);
-        text-transform: uppercase;
         grid-column: 1;
         grid-row: 2;
         margin-right: 10px;
@@ -119,8 +112,6 @@
     }
 
     .top-header__subtitle--journal {
-        font-weight: var(--heeboBlack);
-        text-transform: uppercase;
         grid-column: 2;
         grid-row: 2;
         margin-left: 10px;
