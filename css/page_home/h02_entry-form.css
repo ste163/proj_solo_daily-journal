@@ -1,18 +1,29 @@
-.sp-form {
-  will-change: transform;
-  display: grid;
-  grid-template-columns: 15vmin auto 15vmin;
-  align-content: center;
-  height: 90vh;
-  position: absolute;
-  background-color: lightgreen;
-  transform: translateX(-100vw);
-  padding: 15px 0;
+.modal__container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
   width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  width: 400px;
+  max-width: 70%;
+  background-color: red;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.sp-form {
+  display: flex;
+  padding: 15px 0;
 }
 
 .sp-form__back-btn {
-  grid-row: 1;
   background-color: transparent;
   border: none;
   padding: 0 0 5px 0;
@@ -57,28 +68,4 @@ label {
 
 .new__save-btn:hover {
   background-color: yellow;
-}
-
-/***** SLIDING ANIMATION *****/
-.slide-in {
-  animation: slide-in 0.5s forwards;
-}
-
-.slide-out {
-  animation: slide-out 0.5s forwards;
-}
-  
-@keyframes slide-in {
-  100% { transform: translateX(0vw); }
-}
-
-@keyframes slide-out {
-  0% { transform: translateX(0vw); }
-  100% { transform: translateX(-100vw); }
-}
-
-@media screen and (min-width: 450px) {
-  .sp-form {
-    width: 50vmax;
-  }
 }
