@@ -6,16 +6,22 @@
   grid-column: 1 / span 2;
 }
 
+.latest-entry__heading {
+  font-size: 2.3em;
+  letter-spacing: 0.1em;
+}
+
+.latest-entry__title {
+  font-size: 1.7em;
+  grid-column: 1 / span 2;
+  margin: 10px 0 5px 0;
+}
+
 .latest-entry__header {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   margin: 0 0 0 20px;
-}
-
-.latest-entry__title {
-  grid-column: 1 / span 2;
-  margin: 10px 0 5px 0;
 }
 
 .latest-entry__date {
@@ -41,6 +47,8 @@
 }
 
 .latest-entry__text {
+  font-weight: var(--heeboLight);
+  font-size: 1.1em;
   margin: 10px 10px 0 20px;
 }
 
