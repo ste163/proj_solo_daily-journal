@@ -1,8 +1,8 @@
 .gridBody {
   display: grid;
   grid-template-rows: min-content 1fr;
+  grid-gap: 30px;
   height: 100vh;
-
 }
 
 .gridMain {

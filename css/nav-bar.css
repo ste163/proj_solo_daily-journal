@@ -5,6 +5,11 @@
     padding-top: 7px;
 }
 
+.top-header__h1-grid {
+  display: grid;
+  grid-column: 1;
+}
+
 .top-header__nav {
   grid-column: 1;
   align-self: center;
@@ -27,27 +32,20 @@
 }
 
 .top-header__logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTMyLjI5IDEzMi4yOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBpZD0iYmFja2dyb3VuZCIgZD0ibTEzMC40IDY2LjE0NmE2NC4yNTYgNjQuMjU2IDAgMCAxLTY0LjI1NiA2NC4yNTYgNjQuMjU2IDY0LjI1NiAwIDAgMS02NC4yNTYtNjQuMjU2IDY0LjI1NiA2NC4yNTYgMCAwIDEgNjQuMjU2LTY0LjI1NiA2NC4yNTYgNjQuMjU2IDAgMCAxIDY0LjI1NiA2NC4yNTYiIHN0eWxlPSJmaWxsOiNmMGYwZjA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLXdpZHRoOjEuMTk1NDtzdHJva2U6I2YwZjBmMCIvPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoLjI2NDU4KSIgZD0ibTI4MS4zNCA3NS40NTNjLTI3Ljc5NiAwLjE4Njg5LTU1LjU2NyA5LjkwODMtNzguMDAyIDI5LjI0NC00Ljc2NjggNC4xMDg0LTkuMTMzIDguNTIzMS0xMy4xMDUgMTMuMTg2LTMuNTA1OCAyLjQwMTctNi45MTMxIDUuMDEzNS0xMC4xOTkgNy44NDU3LTQ0LjM2NiAzOC4yMzctNTMuMTA2IDEwMy43Mi0yMC4zMjIgMTUyLjI2YTQuNDAyNyA0LjQwMjcgMCAwIDAgNi4xMTEzIDEuMTgxNiA0LjQwMjcgNC40MDI3IDAgMCAwIDEuMTgxNi02LjExMTNjLTI2LjU3Mi0zOS4zNC0yMy42Ny05MC41NzggNS4wNjY0LTEyNi40NS0xNi42NTMgMzcuMTA5LTE0LjAyNCA4MS41MjMgMTAuMDM3IDExNy4xNGE5LjU2NjggOS41NjY4IDAgMCAwIDEzLjI4NyAyLjU3NjIgOS41NjY4IDkuNTY2OCAwIDAgMCAyLjU2ODQtMTMuMjgxYy0yOC44ODItNDIuNzYtMjEuMjIxLTEwMC4xNyAxNy44NjUtMTMzLjg2IDMuOTYyNi0zLjQxNTMgOC4xMjA0LTYuNDY4OCAxMi40My05LjE3MzggMzQuMTY0LTguOTk4NCA3MS44MDItMC43NDE5OSA5OS40MDYgMjQuNTcyYTQuNDAyNyA0LjQwMjcgMCAwIDAgNi4yMjI2LTAuMjczNDQgNC40MDI3IDQuNDAyNyAwIDAgMC0wLjI3MzQzLTYuMjE0OGMtMjEuNTgzLTE5Ljc5My00OC44ODktMjkuOTQ2LTc2LjM0NC0zMC4zNjktMC4xNjQwNC0wLjAwMjUtMC4zMjgxNC0xLjIxZS00IC0wLjQ5MjE5LTJlLTMgMzIuMzctOC4zNTI3IDY3LjkyNy0wLjQ0MDMgOTQuMDggMjMuNTQzYTkuNTY2OCA5LjU2NjggMCAwIDAgMTMuNTE2LTAuNTg5ODQgOS41NjY4IDkuNTY2OCAwIDAgMC0wLjU4OTg0LTEzLjUxOGMtMjIuNTMzLTIwLjY2My01MS4wNjUtMzEuMjU1LTc5Ljc1NC0zMS42OTctMC44OTY1My0wLjAxMzgxLTEuNzkyOC0wLjAxNzc1LTIuNjg5NC0wLjAxMTcyem00NS4zNjMgMTE5LjcyYTkuNTY2OCA5LjU2NjggMCAwIDAtNy4wNzAzIDMuMDk5NiA5LjU2NjggOS41NjY4IDAgMCAwIDAuNTgyMDMgMTMuNTE4YzIuOTI5MSAyLjY4NjEgNS43MDIzIDUuNTQ0MyA4LjI5NjkgOC41NTQ3IDI5LjgwMiAzNC42NzYgMzIuMTc2IDgzLjQ3NCA5LjA4NCAxMjAuMjEgNy42MDU5LTM0LjM2MS0wLjQ5NjY2LTcxLjc2NC0yNS4xODQtMTAwLjQ2di04ZS0zYy0yLjk1MTMtMy40MjQzLTYuMTAxOS02LjY2NTMtOS40MzM2LTkuNzIwN2E0LjQwMjcgNC40MDI3IDAgMCAwLTMuMTM2Ny0xLjE2MDJ2MmUtM2E0LjQwMjcgNC40MDI3IDAgMCAwLTMuMDg1OSAxLjQyMzggNC40MDI3IDQuNDAyNyAwIDAgMCAwLjI3MzQzIDYuMjIyN2MzLjA3NzkgMi44MjI2IDUuOTgyNiA1LjgyMDkgOC43MDkgOC45ODQ0IDI4LjAzNCAzMi41OTIgMzIuOTU4IDc3LjE3MSAxNi4yNzMgMTEzLjg2LTEuMzY1NyAxLjMxNDktMi43NzA1IDIuNjA0Mi00LjIyNDYgMy44NTc0LTQyLjU2IDM2LjY4MS0xMDYuNSAzMS45ODItMTQzLjIzLTEwLjUzMy0yLjU5MTgtMy4wMDc3LTUuMDA0Mi02LjE2NjktNy4yMjY2LTkuNDU3YTkuNTY2OCA5LjU2NjggMCAwIDAtMTMuMjg3LTIuNTc2MiA5LjU2NjggOS41NjY4IDAgMCAwLTIuNTY4NCAxMy4yODdjMi42NDMxIDMuOTEzIDUuNTA5IDcuNjY1NCA4LjU5MTggMTEuMjQybDhlLTMgOGUtM2MzMi40MTQgMzcuNTE1IDgzLjA2OSA1MC4xOCAxMjcuNjMgMzYuMjIxLTQ0LjQ3NyAzMi41MjMtMTA3LjA5IDI1Ljk0NS0xNDMuNzQtMTYuNDg4LTIuNzIzNi0zLjE2MDctNS4yNjAzLTYuNDc4MS03LjU5NTctOS45MzU2YTQuNDAyNyA0LjQwMjcgMCAwIDAtNi4xMTEzLTEuMTg5NCA0LjQwMjcgNC40MDI3IDAgMCAwLTEuMTg5NCA2LjExMTNjMi41MyAzLjc0NTcgNS4yNzk1IDcuMzQ3NiA4LjIzMDUgMTAuNzcxaDhlLTNjNDEuNjYxIDQ4LjI0MSAxMTQuNjYgNTMuNjE1IDE2Mi45NCAxMi4wMDIgNC40NDI3LTMuODI5MSA4LjUxODMtNy45MjU1IDEyLjIzMi0xMi4yNDIgNi4yMDA4LTMuNjM1NyAxMi4xNjMtNy44NzQ1IDE3Ljc5Ny0xMi43MyA1MC4zODctNDMuNDI3IDU2LjA5Ny0xMTkuNzQgMTIuNzMyLTE3MC4xOHYtOGUtM2wtNmUtMyAtOGUtM2MtMy4wODMxLTMuNTc3Mi02LjM3NDktNi45NjQ0LTkuODU1NS0xMC4xNTZhOS41NjY4IDkuNTY2OCAwIDAgMC02LjQ0NTMtMi41MTc2eiIgc3R5bGU9ImNvbG9yLXJlbmRlcmluZzphdXRvO2NvbG9yOiMwMDAwMDA7ZG9taW5hbnQtYmFzZWxpbmU6YXV0bztmaWxsOiMxODE5MzU7Zm9udC1mZWF0dXJlLXNldHRpbmdzOm5vcm1hbDtmb250LXZhcmlhbnQtYWx0ZXJuYXRlczpub3JtYWw7Zm9udC12YXJpYW50LWNhcHM6bm9ybWFsO2ZvbnQtdmFyaWFudC1lYXN0LWFzaWFuOm5vcm1hbDtmb250LXZhcmlhbnQtbGlnYXR1cmVzOm5vcm1hbDtmb250LXZhcmlhbnQtbnVtZXJpYzpub3JtYWw7Zm9udC12YXJpYW50LXBvc2l0aW9uOm5vcm1hbDtmb250LXZhcmlhdGlvbi1zZXR0aW5nczpub3JtYWw7aW1hZ2UtcmVuZGVyaW5nOmF1dG87aW5saW5lLXNpemU6MDtpc29sYXRpb246YXV0bzttaXgtYmxlbmQtbW9kZTpub3JtYWw7c2hhcGUtbWFyZ2luOjA7c2hhcGUtcGFkZGluZzowO3NoYXBlLXJlbmRlcmluZzphdXRvO3NvbGlkLWNvbG9yOiMwMDAwMDA7c3RvcC1jb2xvcjojMDAwMDAwO3RleHQtZGVjb3JhdGlvbi1jb2xvcjojMDAwMDAwO3RleHQtZGVjb3JhdGlvbi1saW5lOm5vbmU7dGV4dC1kZWNvcmF0aW9uLXN0eWxlOnNvbGlkO3RleHQtaW5kZW50OjA7dGV4dC1vcmllbnRhdGlvbjptaXhlZDt0ZXh0LXRyYW5zZm9ybTpub25lO3doaXRlLXNwYWNlOm5vcm1hbCIvPjwvc3ZnPg==) no-repeat center center;
-  background-size: 50px 50px;
+  background-size: 40px 40px;
   place-self: center;
   grid-column: 3;
-}
-
-.top-header__h1-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-column: 2;
 }
 
 .top-header__title {
   color: var(--fontColor);
   font-family: var(--heeboFont);
   font-weight: var(--heeboThin);
-  font-size: 1.4em;
-  letter-spacing: 0.3em;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
   margin: 0;
   place-self: start;
 }
@@ -56,21 +54,21 @@
   color: var(--fontColor);
   text-transform: uppercase;
   font-family: var(--heeboFont);
-  font-size: 0.65em;
+  font-size: 0.5em;
   letter-spacing: 0.2em;
 }
 
 .top-header__subtitle--daily {
   text-transform: uppercase;
-  font-size: .6em;
   grid-column: 2;
-  grid-row: 1 / span 2;
-  writing-mode: vertical-lr;
-  place-self: end start;
+  grid-row: 1;
+  padding-left: 5px;
 }
 
 .top-header__subtitle--journal {
-  place-self: end end;
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 450px) {
@@ -83,13 +81,12 @@
     }
 
     .top-header__h1-grid {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto
+      grid-column: 2;
     }
 
     .top-header__title {
         grid-column: 1;
+        font-size: 1.5em;
         margin: 0;
         letter-spacing: 0.2em;
         place-self: center end;
@@ -102,9 +99,7 @@
     .top-header__subtitle--daily {
         grid-column: 2;
         grid-row: 1;
-        font-size: .65em;
-        writing-mode: horizontal-tb;
-        padding: 10px;
+        padding-top: 15px;
         padding-left: 5px;
         place-self: start;
     }
@@ -112,7 +107,7 @@
     .top-header__subtitle--journal {
         grid-column: 2;
         grid-row: 1;
-        padding-bottom: 9px;
+        padding-bottom: 15px;
         place-self: end start;
     }
 }

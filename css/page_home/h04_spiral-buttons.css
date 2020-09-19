@@ -11,41 +11,40 @@
     place-self: center;
 }
 
-.button__create {
+.button:hover {
+    background-color: var(--fontColor);
+    color:var(--mainBlue);
     cursor: pointer;
+}
+
+.button__create {
     grid-row: 2;
     grid-column: 1;
 }
   
-.button__create:hover {
-    background-color: yellow;
-}
-  
+/* View-all has the extra place-self because the button is inside an <a> tag */
 .button__view-all {
     grid-row: 2;
     grid-column: 2;
-}
-  
-.button__view-all:hover {
-    background-color: yellow;
+    place-self: center;
 }
 
 @media screen and (min-width: 450px) {
 
     .button {
         width: 20vmin;
+        place-self: center start;
     }
 
     .button__create {
         grid-row: 2;
         grid-column: 1;
-        place-self: end;
     }
 
     .button__view-all {
         grid-row: 3;
         grid-column: 1;
-        place-self: end;
+        place-self: center start;
     }
 
 }
