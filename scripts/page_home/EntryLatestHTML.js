@@ -1,3 +1,4 @@
+// Module goal: generate HTML for latest entry section
 export const EntryLatestHTML = (entryObj) => {
     return `
     <div class="latest-entry__decoration">

@@ -8,6 +8,7 @@
     height: 4.5em;
     padding: 10px;
     transition: 0.3s;
+    place-self: center;
 }
 
 .button__create {
