@@ -1,6 +1,11 @@
 export const EntryLatestHTML = (entryObj) => {
     return `
-    <h2 class="latest-entry__heading">Latest</h2>
+    <div class="latest-entry__decoration">
+        <svg class="latest-entry__svg">
+            <circle cx="1.2em" cy="1.2em" r="1.2em"/>
+        </svg> 
+        <h2 class="latest-entry__heading">Latest</h2>
+    </div>
     <header class="latest-entry__header"> 
         <h3 class="latest-entry__title">${entryObj.title}</h3>
         <p class="latest-entry__author">${entryObj.author}</p>

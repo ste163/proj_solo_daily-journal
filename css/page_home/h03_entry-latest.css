@@ -6,9 +6,25 @@
   grid-column: 1 / span 2;
 }
 
+.latest-entry__decoration {
+  display: grid;
+}
+
+.latest-entry__svg {
+  fill: var(--accentGreen);
+  height: 2.4em; 
+  width: 2.4em;
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .latest-entry__heading {
   font-size: 2.3em;
   letter-spacing: 0.1em;
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 10px;
+  place-self: center start;
 }
 
 .latest-entry__title {
