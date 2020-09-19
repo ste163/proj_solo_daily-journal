@@ -32,19 +32,20 @@
 @media screen and (min-width: 450px) {
 
     .button {
-        width: 20vmin;
-        place-self: center start;
+        width: 30vmin;
     }
 
     .button__create {
         grid-row: 2;
         grid-column: 1;
+        place-self: start center;
     }
 
     .button__view-all {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: 1;
-        place-self: center start;
+        place-self: start center;
+        margin-top: 80px;
     }
 
 }

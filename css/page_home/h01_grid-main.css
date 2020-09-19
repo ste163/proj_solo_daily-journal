@@ -14,6 +14,7 @@
   .gridBody {
     grid-template-rows: 1fr 5fr 1fr;
     min-height: 100vh;
+    grid-gap: 0px;
   }
 
 .gridMain {

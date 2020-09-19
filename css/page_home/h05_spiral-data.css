@@ -1,15 +1,13 @@
 .sp-data {
     grid-column: 1 / span 2;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
 }
 
 .sp-data__decoration {
     display: grid;
     grid-column: 1 / span 2;
     place-self: end;
+    margin-bottom: 20px;
 }
   
 .sp-data__svg {
@@ -69,23 +67,25 @@
 @media screen and (min-width: 450px) {
 
     .sp-data {
+        display: flex;
+        flex-flow: column wrap;
         margin-left: 40px;
         grid-column: 2;
-        grid-row: 2 / span 3;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
+        grid-row: 2;
     }
 
     .sp-data__decoration {
         place-self: center;
+        margin-bottom: 10px;
     }
 
     .sp-total{
         place-self: center;
+        margin: 10px 0;
     }
 
     .sp-average {
         place-self: center;
+        margin: 10px 0;
     }
 }
