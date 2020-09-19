@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 10vw 75vw 10vw;
     position: sticky;
-    padding: 7px;
+    padding-top: 7px;
 }
 
 .top-header__nav {
