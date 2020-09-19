@@ -8,17 +8,15 @@
     --highlightPink: #fff0fc;
     --highlightYellow: #E9EB68;
   
-    --headerShadow: #ededcf;
-  
-    --bodyText: #2D2D2D;
-}
-  
-@font-face {
-    /* Custom fonts are for PERSONAL use only. This is a demonstration project */
-    font-family: "Amity Jack";
-    src: url("../assets/fonts/AmityJack.woff2") form("woff2");
-    font-weight: normal;
-    font-style: normal;
-  
-    font-family: 'Heebo', sans-serif;
+    /* Font color */
+    --fontColor: #f0f0f0ff;
+
+    /* Font style */
+    --heeboFont: "Heebo", sans-serif;
+
+    /* Font weights */
+    --heeboThin: 100;
+    --heeboLight: 300;
+    --heeboMedium: 500;
+    --heeboBlack: 900;
 }
