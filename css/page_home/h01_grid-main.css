@@ -6,20 +6,24 @@
 }
 
 .gridMain {
-  display: grid;
+  display: flex;
+  flex-flow:column;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 450px) {
 
   .gridBody {
     grid-template-rows: 1fr 5fr 1fr;
-    min-height: 100vh;
     grid-gap: 0px;
   }
 
 .gridMain {
-    justify-self: center;
+    display: grid;
     grid-gap: 10px;
+    max-width: 800px;
+    margin-right: 60px;
+    margin-left: 20px;
   }
 }
  

@@ -1,21 +1,50 @@
-.sp-form {
-  will-change: transform;
-  display: grid;
-  grid-template-columns: 15vmin auto 15vmin;
-  align-content: center;
-  height: 90vh;
-  position: absolute;
-  background-color: lightgreen;
-  transform: translateX(-100vw);
-  padding: 15px 0;
+.modal__container {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
   width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.modal__container.modal__show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+  max-width: 70%;
+  color: var(--mainBlue);
+  background-color: var(--fontColor);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#modalClose {
+  width: 20%;
+}
+
+.modal__header {
+  display: flex;
+}
+
+.sp-form {
+  display: flex;
+  padding: 15px 0;
 }
 
 .sp-form__back-btn {
-  grid-row: 1;
   background-color: transparent;
   border: none;
-  padding: 0 0 5px 0;
   font-size: 2em;
   color: var(--mainBlue);
   cursor: pointer;
@@ -25,24 +54,30 @@
   grid-column: 2;
   place-self: center;
   width: 100%;
-  border-bottom: none;
-  text-align: center;
-}
-
-label {
-  font-family: var(--heeboFont);
-  font-weight: var(--heeboMedium);
 }
 
 .new {
   display: flex;
   flex-flow: column;
-  grid-column: 2;
+  flex-grow: 1;
 }
 
-.new__center {
+.new__item {
   display: flex;
   flex-flow: column nowrap;
+}
+
+.new__label {
+  font-family: var(--heeboFont);
+  font-weight: var(--heeboMedium);
+}
+
+.new__field {
+  width: 100%;
+}
+
+.concept__checkbox {
+  margin-right: 10px;
 }
 
 .new__save-btn {
@@ -52,33 +87,13 @@ label {
   border: 3px solid var(--mainBlue);
   cursor: pointer;
   font-size: 1.1em;
+  border-radius: 50px;
   transition: 0.3s;
+  width: 50%;
+  place-self: center;
 }
 
 .new__save-btn:hover {
-  background-color: yellow;
-}
-
-/***** SLIDING ANIMATION *****/
-.slide-in {
-  animation: slide-in 0.5s forwards;
-}
-
-.slide-out {
-  animation: slide-out 0.5s forwards;
-}
-  
-@keyframes slide-in {
-  100% { transform: translateX(0vw); }
-}
-
-@keyframes slide-out {
-  0% { transform: translateX(0vw); }
-  100% { transform: translateX(-100vw); }
-}
-
-@media screen and (min-width: 450px) {
-  .sp-form {
-    width: 50vmax;
-  }
+  background-color: var(--mainBlue);
+  color: var(--fontColor);
 }

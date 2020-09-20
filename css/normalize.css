@@ -212,3 +212,7 @@ body {
     display: flex;
     justify-content: space-around;
   }
+
+  .footer-item {
+      align-self: flex-end;
+  }

@@ -13,6 +13,19 @@
       "title": "Concepts are checkboxes",
       "text": "It took most of the afternoon, but the concepts are checkboxes and they actually save values!",
       "id": 1
+    },
+    {
+      "date": 1600621540195,
+      "author": "Sam",
+      "moodId": 5,
+      "conceptId": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "title": "Modal Magic",
+      "text": "After much work and testing, the modal view is fully functioning and styled!",
+      "id": 2
     }
   ],
   "moods": [

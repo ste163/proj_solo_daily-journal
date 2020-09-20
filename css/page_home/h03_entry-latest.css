@@ -5,6 +5,7 @@
 
 .latest-entry__decoration {
   display: grid;
+  margin-left: 10px;
 }
 
 .latest-entry__svg {
@@ -16,7 +17,7 @@
 }
 
 .latest-entry__heading {
-  font-size: 2.3em;
+  font-size: 2.2em;
   letter-spacing: 0.1em;
   grid-column: 1;
   grid-row: 1;
@@ -24,7 +25,7 @@
 }
 
 .latest-entry__title {
-  font-size: 1.7em;
+  font-size: 1.6em;
   grid-column: 1 / span 2;
   margin: 10px 0 5px 0;
 }
@@ -34,7 +35,7 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   grid-gap: 0 10px;
-  margin: 0 0 0 20px;
+  margin: 0 20px 0 20px;
 }
 
 .latest-entry__date {

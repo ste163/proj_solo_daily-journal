@@ -35,15 +35,24 @@
                 <span class="top-header__subtitle top-header__subtitle--journal">Journal</span>
             </h1>
             <div class="top-header__logo"></div>
+            <nav class="top-header__nav">
+                <div class="icon__view-all"></div>
+                <a id="navLink" class="nav__link" href="pages/view-all.html">View All Spirals</a>
+                <svg class="svg__container" width="120" height="8">
+                    <rect class="nav__underline" rx="3" ry="3" width="20" height="5"/>
+                </svg>
+            </nav>
         </header>
         <main class="gridMain">
-            <section class="sp-form slide-out"></section>
+            <section class="sp-form modal__container">
+                <div class="modal">
+                </div>
+            </section>
             <article class="latest-entry"></article>
-            <button class="button button__slider button__create">Create Spiral</button>
-            <a class="button__view-all" href="pages/view-all.html"><button class="button">View All Spirals</button></a>
+            <button id="modalOpen" class="button button__create">Create Spiral</button>
             <section class="sp-data"></section>
         </main>
-        <footer><span class="footer-name">S. Edwards</span><span class="footer-github"><a href="https://github.com/ste163">Github Profile</a></span><span class="footer-copyright">&copy 2020</span></footer>
+        <footer><span class="footer-item">S. Edwards</span><span class="footer-item"><a href="https://github.com/ste163">Github Profile</a></span><span class="footer-item">&copy 2020</span></footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
