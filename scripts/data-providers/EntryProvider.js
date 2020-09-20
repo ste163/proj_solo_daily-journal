@@ -1,7 +1,7 @@
 // Module goals:
     // Export entries from database
     // Save entries
-const eventHub = document.querySelector(".gridMain");
+const eventHub = document.querySelector(".gridBody");
 let journal = []
 
 // Inform eventHub the entries have changed

@@ -4,7 +4,7 @@ import { saveEntry } from "../data-providers/EntryProvider.js"
 import { getMoods, useMoods } from "../data-providers/MoodProvider.js"
 import { getConcepts, useConcepts } from "../data-providers/ConceptProvider.js"
 
-const eventHub = document.querySelector(".gridMain");
+const eventHub = document.querySelector(".gridBody");
 const entryDOMtarget = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal__container");
 

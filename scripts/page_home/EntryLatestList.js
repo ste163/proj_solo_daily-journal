@@ -1,6 +1,6 @@
 import {useEntries, getEntries } from "../data-providers/EntryProvider.js"
 import { EntryLatestHTML } from "./EntryLatestHTML.js"
-const eventHub = document.querySelector(".gridMain");
+const eventHub = document.querySelector(".gridBody");
 
 eventHub.addEventListener("entryStateChanged", e => {
     listEntryLatest();

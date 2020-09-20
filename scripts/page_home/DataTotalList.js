@@ -1,6 +1,6 @@
 import {useEntries, getEntries } from "../data-providers/EntryProvider.js"
 import { DataTotalHTML } from "./DataTotalHTML.js"
-const eventHub = document.querySelector(".gridMain");
+const eventHub = document.querySelector(".gridBody");
 
 // After user saves new form, update the total.
 eventHub.addEventListener("entryStateChanged", e => {

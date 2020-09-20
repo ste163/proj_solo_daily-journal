@@ -1,6 +1,6 @@
 .top-header {
     display: grid;
-    grid-template-columns: 10vw 90vw;
+    grid-template-columns: min-content 90vw;
     margin-top: 15px;
 }
 
@@ -9,10 +9,12 @@
   grid-column: 2;
   grid-row: 1;
   justify-self: end;
-  margin-right: 15px;
+  margin-right: 42px;
 }
 
 .top-header__nav {
+  display: grid;
+  grid-gap: 2px;
   grid-column: 1 / span 2;
   margin-left: 10px;
   margin-top: 15px;
@@ -25,13 +27,16 @@
   cursor: pointer;
   margin-top: 10px;
   padding: 0px;
-  text-decoration-line: underline;
   transition: 0.1s;
 }
 
-.nav__button:hover {
-  color: var(--mainBlue);
-  background-color: var(--fontColor)
+.nav__underline {
+  fill: var(--navYellow);
+  transition: 0.3s;
+}
+
+.nav__underline--grow {
+  width: 120px;
 }
 
 .top-header__logo {
@@ -87,7 +92,8 @@
 
     .top-header__h1-grid {
       grid-column: 2;
-      justify-self: center;
+      justify-self: start;
+      margin-left: 20px;
     }
 
     .top-header__logo {
