@@ -19,15 +19,22 @@
 }
 
 .modal {
+  display: flex;
+  flex-flow: column;
   width: 400px;
   max-width: 70%;
-  background-color: red;
+  color: var(--mainBlue);
+  background-color: var(--fontColor);
   padding: 30px;
   border-radius: 5px;
 }
 
 #modalClose {
   width: 20%;
+}
+
+.modal__header {
+  display: flex;
 }
 
 .sp-form {
@@ -38,7 +45,6 @@
 .sp-form__back-btn {
   background-color: transparent;
   border: none;
-  padding: 0 0 5px 0;
   font-size: 2em;
   color: var(--mainBlue);
   cursor: pointer;
@@ -48,24 +54,30 @@
   grid-column: 2;
   place-self: center;
   width: 100%;
-  border-bottom: none;
-  text-align: center;
-}
-
-label {
-  font-family: var(--heeboFont);
-  font-weight: var(--heeboMedium);
 }
 
 .new {
   display: flex;
   flex-flow: column;
-  grid-column: 2;
+  flex-grow: 1;
 }
 
-.new__center {
+.new__item {
   display: flex;
   flex-flow: column nowrap;
+}
+
+.new__label {
+  font-family: var(--heeboFont);
+  font-weight: var(--heeboMedium);
+}
+
+.new__field {
+  width: 100%;
+}
+
+.concept__checkbox {
+  margin-right: 10px;
 }
 
 .new__save-btn {
@@ -75,9 +87,13 @@ label {
   border: 3px solid var(--mainBlue);
   cursor: pointer;
   font-size: 1.1em;
+  border-radius: 50px;
   transition: 0.3s;
+  width: 50%;
+  place-self: center;
 }
 
 .new__save-btn:hover {
-  background-color: yellow;
+  background-color: var(--mainBlue);
+  color: var(--fontColor);
 }
