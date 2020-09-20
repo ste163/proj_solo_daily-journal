@@ -18,7 +18,6 @@ eventHub.addEventListener("click", e => {
     }
 });
 
-
 //When user presses save button, save entered field's data to database then reset fields
 eventHub.addEventListener("click", e => {
     if (e.target.id === "new__save-btn") {
