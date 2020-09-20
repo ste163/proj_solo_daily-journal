@@ -18,6 +18,18 @@
   grid-column: 1 / span 2;
   margin-left: 10px;
   margin-top: 15px;
+  grid-template-columns: min-content;
+}
+
+.svg__container {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.nav__link {
+  grid-row: 1;
+  grid-column: 2;
+  place-self: end start;
 }
 
 .nav__button {
@@ -37,6 +49,15 @@
 
 .nav__underline--grow {
   width: 120px;
+}
+
+.icon__view-all {
+  width: 45px;
+  height: 45px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjYuNDU4IDI2LjQ1OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGlkPSJ2aWV3LWFsbCIgdHJhbnNmb3JtPSJzY2FsZSguMjY0NTgpIiBkPSJtMzIuODU3IDI1LjAxNmMtMi4xOTI1IDAtMy45NTkgMS43NjQ1LTMuOTU5IDMuOTU3czEuNzY2NSAzLjk1NyAzLjk1OSAzLjk1N2gxOC43OTdjMi4xOTI1IDAgMy45NTctMS43NjQ1IDMuOTU3LTMuOTU3cy0xLjc2NDUtMy45NTctMy45NTctMy45NTdoLTE4Ljc5N3ptMCAxNC4wMThjLTIuMTkyNSAwLTMuOTU5IDEuNzY0NS0zLjk1OSAzLjk1NyAwIDIuMTkyNSAxLjc2NjUgMy45NTkgMy45NTkgMy45NTloMzQuMjg1YzIuMTkyNSAwIDMuOTU5LTEuNzY2NSAzLjk1OS0zLjk1OSAwLTIuMTkyNS0xLjc2NjUtMy45NTctMy45NTktMy45NTdoLTM0LjI4NXptMCAxNC4wMThjLTIuMTkyNSAwLTMuOTU5IDEuNzY2NS0zLjk1OSAzLjk1OSAwIDIuMTkyNSAxLjc2NjUgMy45NTcgMy45NTkgMy45NTdoMjUuOTE4YzIuMTkyNSAwIDMuOTU5LTEuNzY0NSAzLjk1OS0zLjk1NyAwLTIuMTkyNS0xLjc2NjUtMy45NTktMy45NTktMy45NTloLTI1LjkxOHptMCAxNC4wMmMtMi4xOTI1IDAtMy45NTkgMS43NjQ1LTMuOTU5IDMuOTU3IDAgMi4xOTI1IDEuNzY2NSAzLjk1NyAzLjk1OSAzLjk1N2gxNy4xNjRjMi4xOTI1IDAgMy45NTctMS43NjQ1IDMuOTU3LTMuOTU3IDAtMi4xOTI1LTEuNzY0NS0zLjk1Ny0zLjk1Ny0zLjk1N2gtMTcuMTY0eiIgc3R5bGU9ImZpbGw6I2YyZDQ1YyIvPgo8L3N2Zz4=) no-repeat center center;
+  background-size: 45px 45px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
 .top-header__logo {
@@ -88,6 +109,7 @@
 
     .top-header {
       height: 75px;
+      margin-bottom: 60px;
     }
 
     .top-header__h1-grid {
@@ -116,7 +138,7 @@
     .top-header__subtitle--daily {
         grid-column: 2;
         grid-row: 1;
-        padding-top: 4px;
+        padding-top: 5px;
         padding-left: 6px;
         place-self: start;
     }
@@ -124,7 +146,29 @@
     .top-header__subtitle--journal {
         grid-column: 2;
         grid-row: 1;
-        padding-bottom: 6px;
+        padding-bottom: 9px;
         place-self: end start;
     }
+}
+
+@media screen and (min-width: 610px) {
+  .top-header {
+    grid-template-columns: min-content min-content min-content;
+    margin-bottom: 0;
+  }
+
+    .top-header__subtitle--daily {
+      padding-top: 13px;
+      padding-left: 6px;
+  }
+
+  .top-header__subtitle--journal {
+      padding-bottom: 17px;
+  }
+
+  .top-header__nav {
+    place-self: start;
+    grid-column: 3;
+  }
+
 }
