@@ -68,6 +68,6 @@
 
 @media screen and (min-width: 450px) {
   .latest-entry {
-    place-self: center;
+    place-self: start;
   }
 }

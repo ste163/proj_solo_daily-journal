@@ -1,31 +1,18 @@
 {
   "entries": [
     {
-      "date": 1600460409724,
+      "date": 1600726961395,
       "author": "Sam",
-      "moodId": 5,
-      "conceptId": [
-        "HTML",
-        "JavaScript",
-        "APIs",
-        "Databases"
-      ],
-      "title": "Concepts are checkboxes",
-      "text": "It took most of the afternoon, but the concepts are checkboxes and they actually save values!",
-      "id": 1
-    },
-    {
-      "date": 1600621540195,
-      "author": "Sam",
-      "moodId": 5,
+      "moodId": 3,
       "conceptId": [
         "HTML",
         "CSS",
-        "JavaScript"
+        "JavaScript",
+        "Databases"
       ],
-      "title": "Modal Magic",
-      "text": "After much work and testing, the modal view is fully functioning and styled!",
-      "id": 2
+      "title": "Fixing those buttons",
+      "text": "There's much to do to get these buttons working correctly!",
+      "id": 1
     }
   ],
   "moods": [

@@ -3,7 +3,7 @@
 import { useEntries, getEntries, deleteEntry } from "../data-providers/EntryProvider.js"
 import { EntryAllHTML } from "./EntryAllHTML.js"
 
-const eventHub = document.querySelector(".gridMain")
+const eventHub = document.querySelector(".gridBodyAll")
 
 // When entries update, update display
 eventHub.addEventListener("entryStateChanged", e => listEntryAll())

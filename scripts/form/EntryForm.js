@@ -39,12 +39,7 @@ eventHub.addEventListener("click", e => {
         }
 
         saveEntry(newEntry);
-        // To clear fields
-        entryAuthor.value = "";
-        entryMood.value = "select";
-        entryConcepts.value = "";
-        entryTitle.value = "";
-        entryText.value = "";
+        renderEntryForm();
     }
 })
 
