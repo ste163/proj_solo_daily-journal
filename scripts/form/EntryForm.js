@@ -10,10 +10,11 @@ const modalContainer = document.querySelector(".modal__container");
 
 // Listen for modal button clicks
 eventHub.addEventListener("click", e => {
-    if (e.target.id === "modalOpen") {
+    const click = e.target.id 
+    if (click === "modalOpen") {
         modalContainer.classList.add("modal__show");
     }
-    if (e.target.id === "modalClose" || e.target.id === "modalBackground") {
+    if (click === "modalClose" || click === "modalBackground" || click === "svgContainer" || click ==="svgClose") {
         modalContainer.classList.remove("modal__show");
     }
 });
@@ -68,8 +69,12 @@ const renderEntryForm = () => {
         const allConcepts = useConcepts();
         return entryDOMtarget.innerHTML = `
             <div class="modal__header">
-                <button id="modalClose" class="sp-form__back-btn" type="button">&#128896</button>
-                <h2 class="sp-form__h2">Create Spiral</h2>
+            <h2 class="sp-form__h2">Create Spiral</h2>
+            <button id="modalClose" class="sp-form__back-btn" type="button">
+                <svg id="svgContainer" class="modal__svg" width="40" height="50">
+                    <path id="svgClose" class="svg__close" d="m35.244 31.279c-1.0126 0-2.0249 0.38817-2.8008 1.1641-1.5518 1.5518-1.5518 4.0517 0 5.6035l11.953 11.953-11.953 11.953c-1.5518 1.5518-1.5518 4.0517 0 5.6035 1.5518 1.5518 4.0517 1.5518 5.6035 0l11.953-11.953 11.953 11.953c1.5518 1.5518 4.0517 1.5518 5.6035 0 1.5518-1.5518 1.5518-4.0517 0-5.6035l-11.953-11.953 11.953-11.953c1.5518-1.5518 1.5518-4.0517 0-5.6035-1.5518-1.5518-4.0517-1.5518-5.6035 0l-11.953 11.953-11.953-11.953c-0.77589-0.77589-1.7902-1.1641-2.8027-1.1641z" fill="#f2d45c"/>
+                </svg>
+            </button>
             </div>
             <form class="new" action="">
                 <fieldset class="new__item">
@@ -92,8 +97,10 @@ const renderEntryForm = () => {
                     <div class="concepts">
                         ${
                             allConcepts.map((concept) => {
-                                return `<label class="new__field concept__checkbox-label" for="concept--${concept.id}">${concept.label}</label>
-                                <input type="checkbox" class="concept__checkbox" id="concept--${concept.id}" name="${concept.label}" value="${concept.label}">`
+                                return `<div class="concept__container">
+                                    <label class="new__field concept__checkbox-label" for="concept--${concept.id}">${concept.label}</label>
+                                    <input type="checkbox" class="concept__checkbox" id="concept--${concept.id}" name="${concept.label}" value="${concept.label}">
+                                    </div>`
                             }).join("")
                         }
                     </div>
