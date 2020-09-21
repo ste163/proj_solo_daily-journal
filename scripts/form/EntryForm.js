@@ -13,7 +13,7 @@ eventHub.addEventListener("click", e => {
     if (e.target.id === "modalOpen") {
         modalContainer.classList.add("modal__show");
     }
-    if (e.target.id === "modalClose") {
+    if (e.target.id === "modalClose" || e.target.id === "modalBackground") {
         modalContainer.classList.remove("modal__show");
     }
 });

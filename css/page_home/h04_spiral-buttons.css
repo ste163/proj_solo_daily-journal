@@ -23,6 +23,12 @@
     width: 50vmin;
 }
 
+.button__create:focus {
+    background-color: var(--accentGreen);
+    border: var(--accentGreen);
+    color: var(--mainBlue);
+}
+
 @media screen and (min-width: 450px) {
 
     .button__create {
