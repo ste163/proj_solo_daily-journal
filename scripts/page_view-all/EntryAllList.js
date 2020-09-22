@@ -3,10 +3,13 @@
 import { useEntries, getEntries, deleteEntry } from "../data-providers/EntryProvider.js"
 import { EntryAllHTML } from "./EntryAllHTML.js"
 
-const eventHub = document.querySelector(".gridBodyAll")
+const eventHub = document.querySelector(".gridBody")
 
 // When entries update, update display
 eventHub.addEventListener("entryStateChanged", e => listEntryAll())
+
+// When user filters by mood, update display
+eventHub.addEventListener("FilterByMood", e => entryAllRenderer(e.detail.filteredMoods))
 
 // Delete entries when delete button pressed
 eventHub.addEventListener("click", e => {
