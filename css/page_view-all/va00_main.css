@@ -2,6 +2,10 @@
 @import "../normalize.css";
 @import "../nav-bar.css";
 
+.nav__underline--grow {
+    width: 2.5em;
+  }
+
 /* REMOVE DEFAULT STYLING */
 ul {
     padding-inline-start: 0;
@@ -13,10 +17,24 @@ li {
     list-style-type: none;
 }
 
+
+.gridBody {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    flex-flow: column wrap;
+}
+
 .gridBodyAll {
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
     justify-self: center;
     grid-gap: 5px;
+    justify-content: space-between;
+}
+
+.gridMain {
+    margin-top: 20px;
 }
 
 .entries {
@@ -45,34 +63,20 @@ li {
     margin: 3px 5px;
 }
 
-.list-entry__btn {
-    background-color: transparent;
-    border: none;
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-left: 6px solid var(--spiralPink);
+.button {
+    height: 2.3em;
+    margin: 5px 10px;
+    width: 7em;
 }
 
-.list-entry__btn:hover {
-    background-color: var(--highlightPink);
+.btn--edit:hover {
+    background-color: var(--navYellow);
+    border-color: var(--navYellow);
 }
 
-/* Mobile Specific */
-@media screen and (max-width: 450px) {
-    .top-header__subtitle--daily {
-        place-self: center start;
-    }
-
-    .list-entry__flex-btn {
-        display: flex;
-    }
-
-    .list-entry__btn {
-        width: 20vmax;
-    }
+.btn--delete:hover {
+    background-color:#b55151;
+    border-color: #b55151;
 }
 
 /* Wide Specific */
@@ -86,12 +90,4 @@ li {
         grid-template-columns: 25vmin 20vmin;
     }
 
-    .list-entry__flex-btn {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .list-entry__btn {
-        width: 18vmin;
-    }
 }

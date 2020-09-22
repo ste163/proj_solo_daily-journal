@@ -60,6 +60,15 @@
   grid-row: 1 / span 2;
 }
 
+.icon__back {
+  width: 45px;
+  height: 45px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjYuNDU4IDI2LjQ1OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGlkPSJiYWNrIiB0cmFuc2Zvcm09Im1hdHJpeCgtMS4wMzQ3IDAgMCAtMS4wNjM1IC0xOC44MyAtNDQuNDI3KSIgZD0ibS0yNi41MTQtNTQuMjE1LTguOTM5OCA1LjE2MTR2LTEwLjMyM2w0LjQ2OTkgMi41ODA3eiIgZmlsbD0iI2YyZDQ1YyIgc3Ryb2tlPSIjZjJkNDVjIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS4xOTU0Ii8+Cjwvc3ZnPg==) no-repeat center center;
+  background-size: 45px 45px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
 .top-header__logo {
   place-self: center start;
   grid-column: 1;

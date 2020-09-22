@@ -26,16 +26,22 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="gridBody">
     <div class="gridBodyAll">
         <header class="top-header">
-            <div class="top-header__nav"><button class="nav__btn"><a class="nav__link" href="../index.html">Back</a></button></div>
             <h1 class=top-header__h1-grid>
                 <span class="top-header__title">Spiral</span>
                 <span class="top-header__subtitle top-header__subtitle--daily">Daily</span>
                 <span class="top-header__subtitle top-header__subtitle--journal">Journal</span>
             </h1>
             <div class="top-header__logo"></div>
+            <nav class="top-header__nav">
+                <div class="icon__back"></div>
+                <a id="navLink" class="nav__link" href="../index.html">Back</a>
+                <svg class="svg__container" width="120" height="8">
+                    <rect class="nav__underline" rx="3" ry="3" width="20" height="5"/>
+                </svg>
+            </nav>
         </header>
         <main class="gridMain">
             <section>

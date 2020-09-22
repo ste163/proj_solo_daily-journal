@@ -216,3 +216,22 @@ body {
   .footer-item {
       align-self: flex-end;
   }
+
+  .button {
+    border: var(--fontColor) solid;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    height: 4em;
+    padding: 10px;
+    transition: 0.3s;
+    place-self: center;
+    margin: 30px 0;
+}
+
+.button:hover {
+    background-color: var(--fontColor);
+    color:var(--mainBlue);
+    cursor: pointer;
+}
