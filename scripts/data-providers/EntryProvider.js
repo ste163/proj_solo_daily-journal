@@ -38,9 +38,27 @@ export const saveEntry = entryObj => {
 
 // Delete entry from database then inform eventHub
 export const deleteEntry = entryId => {
-    debugger
     return fetch(`http://localhost:8088/entries/${entryId}`, {
         method: "DELETE"
+    })
+    .then(getEntries)
+    .then(dispatchEntryStateChangeEvent)
+}
+
+// Retrieve selected entry in database before editing
+export const getSelectedEntry = (entryId) => {
+    return fetch(`http://localhost:8088/entries/${entryId}`)
+        .then(response => response.json());
+}
+
+// Edit entry in database
+export const editEntry = (editedEntryObj, entryId) => {
+    return fetch(`http://localhost:8088/entries/${entryId}?_expand=mood`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedEntryObj)
     })
     .then(getEntries)
     .then(dispatchEntryStateChangeEvent)

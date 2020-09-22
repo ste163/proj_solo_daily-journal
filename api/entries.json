@@ -1,28 +1,12 @@
 {
   "entries": [
     {
-      "date": 1600791479766,
-      "author": "asdfs",
+      "id": 1,
       "moodId": 2,
-      "title": "adfggfda",
-      "text": "gfdaagfd",
-      "id": 1
-    },
-    {
-      "date": 1600791487531,
-      "author": "asdfsda",
-      "moodId": 1,
-      "title": "dagfgfda",
-      "text": "fgdagfdagfad",
-      "id": 2
-    },
-    {
-      "date": 1600791577564,
-      "author": "fgadgfda",
-      "moodId": 4,
-      "title": "adfgagfdgaf",
-      "text": "fdgaagfdagfd",
-      "id": 3
+      "date": 1600791479766,
+      "author": "Sam",
+      "title": "Title2",
+      "text": "gfdaagfd"
     }
   ],
   "moods": [
