@@ -22,7 +22,7 @@ li {
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .gridBodyAll {

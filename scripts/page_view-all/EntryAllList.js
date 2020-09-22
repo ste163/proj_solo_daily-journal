@@ -13,11 +13,14 @@ eventHub.addEventListener("FilterByMood", e => entryAllRenderer(e.detail.filtere
 
 // Delete entries when delete button pressed
 eventHub.addEventListener("click", e => {
-    debugger;
     if (e.target.id.startsWith("deleteEntry--")) {
         const [prefix, id] = e.target.id.split("--")
         deleteEntry(parseInt(id));
     }
+    if (e.target.id.startsWith("editEntry--")) {
+        const [prefix, id] = e.target.id.split("--")
+    }
+
 })
 
 // Initial page load: fetch latest entries, then invoke rendering
