@@ -13,9 +13,10 @@ eventHub.addEventListener("FilterByMood", e => entryAllRenderer(e.detail.filtere
 
 // Delete entries when delete button pressed
 eventHub.addEventListener("click", e => {
+    debugger;
     if (e.target.id.startsWith("deleteEntry--")) {
         const [prefix, id] = e.target.id.split("--")
-        deleteEntry(id);
+        deleteEntry(parseInt(id));
     }
 })
 

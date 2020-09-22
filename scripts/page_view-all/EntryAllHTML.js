@@ -6,7 +6,7 @@ export const EntryAllHTML = (entryObj) => {
             <h3 class="list-entry__title">${entryObj.title}</h3>
             <p class="header__item list-entry__author">${entryObj.author}</p>
             <p class="header__item list-entry__date"><em>${new Date(entryObj.date).toLocaleDateString("en-US")}</em></p>
-            <p class="header__item list-entry__concept"><strong>Concepts</strong>: ${entryObj.conceptId.join(', ')}</p>
+
             <p class="header__item list-entry__mood"><strong>Mood</strong>: ${entryObj.mood.label}</p>
         </header>
         <section class="list-entry__text">
@@ -19,3 +19,5 @@ export const EntryAllHTML = (entryObj) => {
     </li>
     `
 }
+
+//             <!-- <p class="header__item list-entry__concept"><strong>Concepts</strong>: ${entryObj.conceptId.join(', ')}</p> -->

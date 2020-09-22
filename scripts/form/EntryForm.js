@@ -34,7 +34,7 @@ eventHub.addEventListener("click", e => {
             date: Date.now(),
             author: entryAuthor.value,
             moodId: parseInt(entryMood.value),
-            conceptId: conceptValues,
+            // conceptId: conceptValues,
             title: entryTitle.value,
             text: entryText.value
         }
@@ -49,14 +49,15 @@ export const listEntryForm = () => {
     renderEntryForm()
 }
 
-// Return only concepts' values
+// Return only concepts' ids
 const getConceptValues = (ConceptsNodeList) => {
     const conceptsArray = Array.from(ConceptsNodeList)
     const filteredConcepts = conceptsArray.filter(concept => {
        return concept.checked
     })
     return filteredConcepts.map(concept => {
-        return concept.value
+        const [prefix, id] = concept.id.split("--")
+        return parseInt(id)
     })
 }
 

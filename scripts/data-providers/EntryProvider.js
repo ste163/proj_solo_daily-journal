@@ -36,8 +36,9 @@ export const saveEntry = entryObj => {
     .then(dispatchEntryStateChangeEvent)
 }
 
-// Delete entry from database the inform eventHub
+// Delete entry from database then inform eventHub
 export const deleteEntry = entryId => {
+    debugger
     return fetch(`http://localhost:8088/entries/${entryId}`, {
         method: "DELETE"
     })
