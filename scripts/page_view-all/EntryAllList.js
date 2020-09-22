@@ -22,7 +22,6 @@ eventHub.addEventListener("click", e => {
         const [prefix, id] = e.target.id.split("--")
         EditEntryForm(id)
     }
-
 })
 
 // Initial page load: fetch latest entries, then invoke rendering

@@ -1,12 +1,20 @@
 {
   "entries": [
     {
-      "id": 1,
-      "moodId": 2,
-      "date": 1600791479766,
+      "id": 2,
+      "moodId": 3,
+      "date": 1600802295919,
       "author": "Sam",
-      "title": "Title2",
-      "text": "gfdaagfd"
+      "title": "Working stuff",
+      "text": "I got the editing to work!"
+    },
+    {
+      "id": 3,
+      "moodId": 5,
+      "date": 1600802304166,
+      "author": "Sam",
+      "title": "More editing magic",
+      "text": "This stuff is great, it's really working!"
     }
   ],
   "moods": [
