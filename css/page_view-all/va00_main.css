@@ -79,6 +79,10 @@ li {
     border-color: #b55151;
 }
 
+.mood__filters {
+    margin: 0 0 0 10px;
+}
+
 /* Wide Specific */
 @media screen and (min-width: 450px) {
     .gridItemEntries {
