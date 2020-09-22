@@ -85,6 +85,10 @@ li {
 
 /* Wide Specific */
 @media screen and (min-width: 450px) {
+    .gridMain {
+        margin-left: 85px;
+    }
+
     .gridItemEntries {
         place-self: center;
         width: 50vw;

@@ -72,11 +72,13 @@
         flex-flow: column wrap;
         grid-column: 1;
         grid-row: 2;
+        place-self: start;
     }
 
     .sp-data__decoration {
-        place-self: center;
-        margin-bottom: 10px
+        place-self: start;
+        margin-bottom: 10px;
+        padding-left: 10px;
     }
 
     .sp-total{
