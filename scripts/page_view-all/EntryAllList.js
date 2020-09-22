@@ -2,6 +2,7 @@
     //Display notes on DOM
 import { useEntries, getEntries, deleteEntry } from "../data-providers/EntryProvider.js"
 import { EntryAllHTML } from "./EntryAllHTML.js"
+import { EditEntryForm } from "./EditEntryForm.js"
 
 const eventHub = document.querySelector(".gridBody")
 
@@ -19,8 +20,8 @@ eventHub.addEventListener("click", e => {
     }
     if (e.target.id.startsWith("editEntry--")) {
         const [prefix, id] = e.target.id.split("--")
+        EditEntryForm(id)
     }
-
 })
 
 // Initial page load: fetch latest entries, then invoke rendering

@@ -1,28 +1,20 @@
 {
   "entries": [
     {
-      "date": 1600791479766,
-      "author": "asdfs",
-      "moodId": 2,
-      "title": "adfggfda",
-      "text": "gfdaagfd",
-      "id": 1
+      "id": 2,
+      "moodId": 3,
+      "date": 1600802295919,
+      "author": "Sam",
+      "title": "Working stuff",
+      "text": "I got the editing to work!"
     },
     {
-      "date": 1600791487531,
-      "author": "asdfsda",
-      "moodId": 1,
-      "title": "dagfgfda",
-      "text": "fgdagfdagfad",
-      "id": 2
-    },
-    {
-      "date": 1600791577564,
-      "author": "fgadgfda",
-      "moodId": 4,
-      "title": "adfgagfdgaf",
-      "text": "fdgaagfdagfd",
-      "id": 3
+      "id": 3,
+      "moodId": 5,
+      "date": 1600802304166,
+      "author": "Sam",
+      "title": "More editing magic",
+      "text": "This stuff is great, it's really working!"
     }
   ],
   "moods": [
