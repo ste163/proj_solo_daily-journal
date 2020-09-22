@@ -15,6 +15,14 @@
       "author": "Sam",
       "title": "More editing magic",
       "text": "This stuff is great, it's really working!"
+    },
+    {
+      "date": 1600810518461,
+      "author": "Sam",
+      "moodId": 5,
+      "title": "Decoupling is the greatest",
+      "text": "I now have the same button functionality and form magic working on two pages!",
+      "id": 4
     }
   ],
   "moods": [

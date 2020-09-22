@@ -1,10 +1,15 @@
 @import "../variables-fonts.css";
 @import "../normalize.css";
 @import "../nav-bar.css";
+@import "../page_home/h02_entry-form.css";
 
 .nav__underline--grow {
     width: 2.5em;
   }
+
+.top-header__title {
+    font-weight: var(--heeboThin)
+}
 
 /* REMOVE DEFAULT STYLING */
 ul {
